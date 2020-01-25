@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "UniNeue-HeavyItalic";
+  src: url("UniNeue-HeavyItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "UniNeueBlack";
+  src: url("UniNeueBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "UniNeueBold-Italic";
+  src: url("UniNeueBold-Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "UniNeueBold";
+  src: url("UniNeueBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "UniNeueBook-Italic";
+  src: url("UniNeueBook-Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "UniNeueBook";
+  src: url("UniNeueBook.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "UniNeueHeavy";
+  src: url("UniNeueHeavy.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "UniNeueBlack";
+  src: url("UniNeueBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "UniNeueLight-Italic";
+  src: url("UniNeueLight-Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "UniNeueLight";
+  src: url("UniNeueLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "UniNeueRegular-Italic";
+  src: url("UniNeueRegular-Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "UniNeueRegular";
+  src: url("UniNeueRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "UniNeueThin-Italic";
+  src: url("UniNeueThin-Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "UniNeueThin";
+  src: url("UniNeueThin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

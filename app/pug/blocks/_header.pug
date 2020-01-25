@@ -1,13 +1,16 @@
+-
+    var links = [
+        'Главная',
+        'Преимущества',
+        'Цены',
+        'Портфолио',
+        'Оборудование',
+        'Контакты',
+    ];
 header.header
-    .box
-        .header__body
-            .header__logo
-                a(href="/")
-                    img(src="img/logo.svg", alt="Logo")
-            .header__navig
-                a(href="register.html" class="header__navig-link register")
-                    img(src="img/reg.svg", alt="Registration")
-                    span Регистрация
-                a(href="login.html" class="header__navig-link")
-                    img(src="img/login.svg", alt="Login")
-                    span Вход
+    .header__body
+        nav(class="header__body-navigation")
+            ul(class="navigation--list")
+                each items in links
+                    li(class="navigation--list__elem")
+                        a(href="/" class="navigation--list__elem-link")=items
