@@ -236,8 +236,8 @@ append content
               img(src="img/logo-white.png", alt="Logo")
           .contacts__body--contacts
             .contacts--contact-section
-              a(class="contacts--contact-phone" href="tel:74997777777") 777-77-77
-              a(class="contacts--contact-phone" href="tel:79636939393") 693 93 93
+              a(class="contacts--contact-phone" href="tel:74997777777") +7 (499) 777-77-77
+              a(class="contacts--contact-phone" href="tel:79636939393") +7 (796) 693 93 93
               span(class="contacts--contact-time") ежедневно с 08:00 до 21:00
             button(class="btn" type="button")
               span Вызов замерщика
@@ -402,7 +402,7 @@ append content
         h3(class="process--title") Процесс полусухой стяжки пола
         .process--list.d-flex
           svg(class="process--line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="939px" height="38px")
-            path(fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-dasharray="4, 4" stroke-linecap="round" stroke-linejoin="miter" opacity="0.302" fill="none" d="M2.000,33.000 C2.000,33.000 462.937,-39.404 936.000,34.000")
+            path(fill-rule="evenodd", stroke="rgb(255, 255, 255)", stroke-width="2px", stroke-dasharray="4, 4", stroke-linecap="round", stroke-linejoin="miter", opacity="0.302", fill="none", d="M2.000,33.000 C2.000,33.000 462.937,-39.404 936.000,34.000")
           each item in process
             .process--list__elem.d-flex.col.ai-center
               span(class="process--list__elem-number d-flex ai-center justify-center")=item.num
@@ -418,7 +418,7 @@ append content
                 img(src=item.img, alt=item.name)
               span(class="portfolio--slider__item-name")=item.name
               span(class="portfolio--slider__item-descr")=item.desr
-              button(type="button" class="btn")
+              button(class="btn" type="button")
                 span Хочу такой же пол!
         .portfolio--slider__nav
           button(class="portfolio--slider__prev" type="button")
