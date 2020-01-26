@@ -610,6 +610,8 @@ select, input, textarea {
       right: 120px;
       bottom: -95px;
       max-width: 190px; }
+      .main .main-section.salary.first-salary .salary-cube1 img {
+        position: relative; }
     .main .main-section.salary.first-salary .box {
       height: 100%; }
     .main .main-section.salary.first-salary .salary-man-img {
@@ -659,6 +661,24 @@ select, input, textarea {
         right: 0;
         bottom: -90px;
         z-index: 999; }
+    .main .main-section.salary.second-salary .box {
+      z-index: 10;
+      height: 100%; }
+    .main .main-section.salary.second-salary .secondSalary {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: 70%;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
   .main .main-section.salary .salary--title {
     max-width: 730px;
     width: 100%;
@@ -874,6 +894,293 @@ select, input, textarea {
         line-height: 1.7;
         text-align: center;
         background-color: rgba(16, 27, 46, 0.5); }
+  .main .main-section.materials {
+    margin: 90px 0px; }
+    .main .main-section.materials .materials--title {
+      font-size: 44px;
+      font-family: "UniNeueHeavy";
+      color: #212121;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 65px; }
+    .main .main-section.materials .materials--list__elem {
+      width: 33.33%;
+      border: 1px solid #ebedef;
+      border-left: 1px solid #ebedef;
+      padding: 25px;
+      text-align: center; }
+      .main .main-section.materials .materials--list__elem-image {
+        max-height: 180px;
+        height: 100%; }
+      .main .main-section.materials .materials--list__elem-name {
+        font-size: 22px;
+        font-family: "UniNeueHeavy";
+        color: #212121;
+        line-height: 1.2;
+        text-align: center;
+        margin: 30px 0px 20px 0px; }
+  .main .main-section.screedForm {
+    position: relative;
+    padding-top: 110px;
+    height: 650px; }
+    .main .main-section.screedForm .screedForm-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .main .main-section.screedForm .screedForm-cube-1 {
+      position: absolute;
+      right: 50px;
+      top: -120px;
+      max-width: 180px; }
+      .main .main-section.screedForm .screedForm-cube-1 img {
+        position: relative; }
+    .main .main-section.screedForm .screedForm-cube-2 {
+      position: absolute;
+      left: 50px;
+      left: 50px;
+      bottom: -60px;
+      max-width: 180px; }
+      .main .main-section.screedForm .screedForm-cube-2 img {
+        position: relative; }
+    .main .main-section.screedForm .box {
+      height: 100%;
+      z-index: 10; }
+    .main .main-section.screedForm .salary-man-img {
+      position: absolute;
+      right: 0;
+      bottom: 64px;
+      overflow: hidden;
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding-right: 40px;
+      -webkit-transform: rotate(-3deg);
+          -ms-transform: rotate(-3deg);
+              transform: rotate(-3deg);
+      z-index: 1; }
+      .main .main-section.screedForm .salary-man-img img {
+        position: relative;
+        bottom: 0; }
+    .main .main-section.screedForm .screedForm--title {
+      max-width: 730px;
+      width: 100%;
+      margin-bottom: 30px;
+      font-size: 44px;
+      font-family: "UniNeueHeavy";
+      color: #212121;
+      line-height: 1.364;
+      text-align: left;
+      display: inline-block; }
+      .main .main-section.screedForm .screedForm--title .orange-box {
+        font-size: 44px;
+        font-family: "UniNeueHeavy";
+        line-height: 1.364;
+        text-align: left;
+        color: white;
+        display: inline-block;
+        margin-left: 10px;
+        padding: 0px 10px; }
+    .main .main-section.screedForm .screedForm--subtitle {
+      font-size: 20px;
+      font-family: "UniNeueRegular";
+      color: #212121;
+      line-height: 1.4;
+      text-align: left;
+      max-width: 570px;
+      margin-bottom: 40px; }
+    .main .main-section.screedForm .salary--form {
+      max-width: 640px;
+      width: 100%;
+      position: relative; }
+      .main .main-section.screedForm .salary--form form {
+        position: relative;
+        z-index: 10; }
+        .main .main-section.screedForm .salary--form form .btn {
+          max-height: initial;
+          height: 65px;
+          position: absolute;
+          right: 0;
+          width: 260px;
+          -webkit-border-radius: 35px;
+                  border-radius: 35px; }
+        .main .main-section.screedForm .salary--form form .input {
+          max-width: 450px;
+          height: 65px;
+          width: 100%; }
+  .main .main-section.reviews {
+    margin: 60px 0px 80px 0px; }
+    .main .main-section.reviews .reviews--title {
+      margin-bottom: 65px;
+      font-size: 44px;
+      font-family: "UniNeueHeavy";
+      color: #212121;
+      line-height: 1.2;
+      text-align: center; }
+    .main .main-section.reviews .slick-slide {
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
+              box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      margin: 0px 15px 40px 15px; }
+      .main .main-section.reviews .slick-slide div {
+        height: 240px; }
+    .main .main-section.reviews .reviews--slider__nav {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 100%; }
+      .main .main-section.reviews .reviews--slider__nav .reviews--slider__next {
+        position: absolute;
+        right: 0; }
+      .main .main-section.reviews .reviews--slider__nav .reviews--slider__prev {
+        position: absolute;
+        left: -60px; }
+  .main .main-section.process {
+    height: 600px;
+    padding-top: 150px;
+    margin-bottom: 100px; }
+    .main .main-section.process .process-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .main .main-section.process .process--title {
+      font-size: 44px;
+      font-family: "UniNeueHeavy";
+      color: white;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 90px; }
+    .main .main-section.process .process--list {
+      position: relative; }
+      .main .main-section.process .process--list:before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-top: 2px dashed white;
+        opacity: 0.302; }
+    .main .main-section.process .process--list__elem {
+      width: 100%;
+      margin-right: 30px; }
+      .main .main-section.process .process--list__elem-number {
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        background-color: #ff8400;
+        width: 57px;
+        height: 57px;
+        font-size: 24px;
+        font-family: "UniNeueHeavy";
+        color: white;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 20px; }
+      .main .main-section.process .process--list__elem-name {
+        font-size: 22px;
+        font-family: "UniNeueHeavy";
+        color: white;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 20px; }
+      .main .main-section.process .process--list__elem-descr {
+        font-size: 16px;
+        font-family: "UniNeueRegular";
+        color: white;
+        line-height: 1.5;
+        text-align: center; }
+      .main .main-section.process .process--list__elem:last-of-type {
+        margin-right: 0px; }
+      .main .main-section.process .process--list__elem:nth-of-type(even) {
+        margin-top: -20px; }
+      .main .main-section.process .process--list__elem:nth-of-type(3n) {
+        margin-top: -40px; }
+  .main .main-section.portfolio .portfolio--title {
+    font-size: 44px;
+    font-family: "UniNeueHeavy";
+    color: #212121;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 35px; }
+  .main .main-section.portfolio .portfolio--slider__item {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    max-width: 360px;
+    margin: 40px 15px; }
+    .main .main-section.portfolio .portfolio--slider__item-image {
+      padding: 4px;
+      background-color: white;
+      -webkit-box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 0px 11px 2px rgba(0, 0, 0, 0.2);
+      margin-bottom: 25px; }
+    .main .main-section.portfolio .portfolio--slider__item-name {
+      font-size: 20px;
+      font-family: "UniNeueHeavy";
+      color: #212121;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 25px; }
+    .main .main-section.portfolio .portfolio--slider__item-descr {
+      font-size: 17px;
+      font-family: "UniNeueRegular";
+      color: #212121;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 40px; }
+  .main .main-section.portfolio .portfolio--slider__nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%; }
+    .main .main-section.portfolio .portfolio--slider__nav .portfolio--slider__next {
+      position: absolute;
+      right: 0; }
+    .main .main-section.portfolio .portfolio--slider__nav .portfolio--slider__prev {
+      position: absolute;
+      left: -60px; }
+  .main .main-section.lastSection {
+    height: 725px;
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 55px; }
+    .main .main-section.lastSection .lastSection-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .main .main-section.lastSection .lastSection--title {
+      font-size: 44px;
+      font-family: "UniNeueHeavy";
+      color: #212121;
+      line-height: 1.364;
+      text-align: left;
+      margin-bottom: 30px; }
+    .main .main-section.lastSection .lastSection--text {
+      font-size: 16px;
+      font-family: "UniNeueRegular";
+      color: #212121;
+      line-height: 1.5; }
+      .main .main-section.lastSection .lastSection--text p {
+        margin-bottom: 15px; }
 
 main {
   position: relative; }
