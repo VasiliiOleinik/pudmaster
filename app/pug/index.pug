@@ -1,29 +1,276 @@
 extends blocks/_layout
 append content
-	main.main.contacts
-		.contacts-main-section
-			img(src="img/contact-bg.jpg", alt="" class="contacts-main-banner-img")
-			.box.col
-				.contacts__body
-					.contacts__body--logo
-						a(href="/")
-							img(src="img/logo-white.png", alt="Logo")
-					.contacts__body--contacts
-						.contacts--contact-section
-							a(class="contacts--contact-phone" href="tel:74997777777") +7 (499) 777-77-77
-							a(class="contacts--contact-phone" href="tel:79636939393") +7 (963) 693 93 93
-							span(class="contacts--contact-time") ежедневно с 08:00 до 21:00
-						button(class="btn") Вызов замерщика
-				.contacts__banner-info.d-flex.col
-					h1(class="contacts--title") Остались вопросы?
-					h3(class="contacts--subtitle") Укажите имя и телефон - мы свяжемся с вами<br>в течение нескольких минут
-					button(class="btn") Получить консультацию
-		.contacts-map-section
-			img(src="img/map.png", alt="" class="contacts-map-img")
-			.box
-				.map-card.d-flex.col
-					h2(class="map-card--title") Контакты
-					a(class="map-card--phone" href="tel:74997777777") +7 (499) 777-77-77
-					a(class="map-card--phone" href="tel:79636939393") +7 (963) 693 93 93
-					span(class="map-card--time") ежедневно с 08:00 до 21:00
-					span(class="map-card--location") 124365, город Москва, город Зеленоград, корпус 1619, эт 1 пом II ком 3 оф 27
+  -
+    var sercives = [
+      {
+        title: 'Бесплатный замер',
+        subtitle: 'Замер в день обращения',
+      },
+      {
+        title: 'Без предоплаты',
+        subtitle: 'Оплата по факту',
+      },
+      {
+        title: 'Все включено',
+        subtitle: 'Материалы и доставка, уборка и вынос мусора включены в стоимость работ',
+      },
+      {
+        title: 'Гарантия 5 лет',
+        subtitle: 'На все работы по договору',
+      },
+    ];
+    var advantages = [
+      {
+        img: 'img/icons/wall-clock.svg',
+        name: '12 часов',
+        description: 'Уже через 12 часов по полу можно ходить',
+        number: '01'
+      },
+      {
+        img: 'img/icons/wallet.svg',
+        name: 'Низка цена',
+        description: 'Благодаря современной технологии полусухая стяжка дешевле других видов выравнивания полов.',
+        number: '02'
+      },
+      {
+        img: 'img/icons/like.svg',
+        name: 'Идеально ровно',
+        description: 'Не требует дополнительного выравнивания наливным полом',
+        number: '03'
+      },
+      {
+        img: 'img/icons/no-water.svg',
+        name: 'Без протечек',
+        description: 'При соблюдении технологии протечки исключены',
+        number: '04'
+      },
+      {
+        img: 'img/icons/floor.svg',
+        name: 'Универсально',
+        description: 'Подходит для всех типов помещений и видов напольных покрытий',
+        number: '05'
+      },
+      {
+        img: 'img/icons/group.svg',
+        name: 'Быстро',
+        description: 'Одна бригада, состоящая из пяти человек производит в день-250-300 кв.м стяжки',
+        number: '06'
+      },
+    ];
+    var cost = [
+      {
+        value: '50-60',
+        price: '870',
+      },
+      {
+        value: '60-100',
+        price: '610',
+      },
+      {
+        value: '100-150',
+        price: '520',
+      },
+      {
+        value: 'от 150',
+        price: 'по запросу',
+      },
+    ];
+    var ourAdvantages = [
+      {
+        img: 'img/icons/germany.svg',
+        name: 'Немецкое оборудование',
+        description: 'Работаем на собственном оборудовании немецкого производства Putzmeister',
+      },
+      {
+        img: 'img/icons/construction-and-tools.svg',
+        name: 'Заливаем 250 м2 в день',
+        description: 'Делаем стяжку пола со скоростью 250 м2 в день. Подарите себе легкий старт ремонта.',
+      },
+      {
+        img: 'img/icons/clock.svg',
+        name: 'Оперативно',
+        description: 'Сегодня замер, завтра готовая стяжка',
+      },
+      {
+        img: 'img/icons/medal.svg',
+        name: 'Мастера с опытом от 8 лет',
+        description: 'Не рискуем вашим временем и деньгами, нанимая сторонних рабочих',
+      },
+      {
+        img: 'img/icons/cold.svg',
+        name: 'В любую погоду',
+        description: 'Делаем стяжку зимой пр итемпературе -25ОС',
+      },
+      {
+        img: 'img/icons/payment.svg',
+        name: 'Любая форма оплаты',
+        description: 'Вы можете оплатить наличными, на расчётный счет или онлайн-платежом',
+      },
+    ];
+    var screed = [
+      {
+        img: 'img/flats.png',
+        name: 'Квартиры',
+      },
+      {
+        img: 'img/cotege.png',
+        name: 'Котеджи и дома',
+      },
+      {
+        img: 'img/offices.png',
+        name: 'Офисы',
+      },
+      {
+        img: 'img/parking.png',
+        name: 'Парковки',
+      },
+      {
+        img: 'img/auto.png',
+        name: 'Автосалоны и автосервисы',
+      },
+      {
+        img: 'img/factories.png',
+        name: 'Производственные помещения',
+      },
+    ];
+    var materials = [
+      {
+        img: '',
+        name: 'Цемент М500',
+        description: 'Цемент только проверенных производителей Eurocement, Holcim, Lafarge, HeidelbergCement',  
+      },
+      {
+        img: '',
+        name: 'Мытый крупный песок',
+        description: '1 класса крупный Мк 2,0-3,0 мм.',  
+      },
+      {
+        img: '',
+        name: 'Пластификатор SIKA ®',
+        description: 'Увеличение прочности бетона, снижение усадочных деформаций и повышение трещиностойкости бетона (производство Германия)',  
+      },
+      {
+        img: '',
+        name: 'Фиброволокно',
+        description: 'Предотвращает образование трещин возникающих вследствие механического воздействия или усадки',  
+      },
+      {
+        img: '',
+        name: 'Техническая пленка',
+        description: 'Поддержание необходимой влажности для набора прочности после схватывания  (используем снизу и сверху стяжки)',  
+      },
+      {
+        img: '',
+        name: 'Демпферная лента',
+        description: 'Разделительный слой между стеной и полом для компенсации температурного расширения стяжки',  
+      },
+    ];
+  main.main
+    .main-section.first.d-flex.col
+      .box.col
+        .contacts__body
+          .contacts__body--logo
+            a(href="/")
+              img(src="img/logo-white.png", alt="Logo")
+          .contacts__body--contacts
+            .contacts--contact-section
+              a(class="contacts--contact-phone" href="tel:74997777777") 777-77-77
+              a(class="contacts--contact-phone" href="tel:79636939393") 693 93 93
+              span(class="contacts--contact-time") ежедневно с 08:00 до 21:00
+            button(class="btn") Вызов замерщика
+        .main-banner.d-flex.space-between
+          .main-banner--info.d-flex.col
+            h1(class="main-banner--info__title") Полусухая стяжка пола<br>
+              span любой сложности
+            .orange-box.ai-center.justify-center.d-flex
+              span  от 4000 руб./м2
+            span(class="main-banner--info__text") Идеально ровный пол без трещин и неровностей за 1 день
+            ul(class="main-banner--info__services d-flex flex-wrap")
+              each item in sercives
+                li(class="service d-flex col col-50")
+                  span(class="service--title")=item.title
+                  span(class="service--subtitle")=item.subtitle
+          .main-banner--form.d-flex.col
+            form(class="d-flex col ai-center" action="")
+              span(class="main-banner--form__title") Отправьте заявку
+              span(class="main-banner--form__subtitle") и получите расчет стяжки<br> от наших специалистов
+              input(class="input" id="phone" name="phone" type="text" placeholder="Введите Ваш телефон")
+              button(class="btn" type="submit") Заказать расчет стяжки
+              span(class="main-banner--form__agree") Нажимая на кнопку я даю согласие на обработку своих персональных данных
+    .main-section.advantages.d-flex.col
+      .box.col.ai-center
+        h3(class="advantages--title") Преимущества полусухой стяжки
+        .advantages-list.d-flex.flex-wrap.col-100.justify-center
+          each item in advantages
+            .advantages-list__elem.d-flex.flex-column
+              .advantages-list__elem--image
+                img(src=item.img, alt=item.name)
+              .advantages-list__elem--info
+                span(class="advantages-list__elem--info__name")=item.name
+                span(class="advantages-list__elem--info__descr")=item.description
+              span(class="advantages-list__elem--number")=item.number
+    .main-section.salary.first-salary.d-flex.col
+      img(src="img/salary-bg1.png", alt="Salary bg" class="salary-bg")
+      img(src="img/salary-cube.png", alt="Salary cube" class="salary-cube1 js-parallax" data-size="10")
+      .box.col
+        .salary-man-img
+          img(src="img/salary-man.png", alt="Salary man" class="js-parallax" data-size="15")
+        h3(class="salary--title") Объединился с соседями – <br> получил
+          p.orange-box
+            span дополнительную скидку!
+        .salary--form
+          form(action="" class="d-flex col-100")
+            input(class="input" id="salaryPhone" name="salaryPhone" type="text" placeholder="Введите Ваш телефон")
+            button(class="btn" type="submit") Получить скидку
+          .span(class="salary--value") Скидка
+    .main-section.cost.d-flex.col
+      .box.col
+        h3(class="cost--title") Стоимость полусухой стяжки пола
+        p(class="const--info") Минимальный заказ - 
+          span(class="heavy") 43 000 руб., 
+          span от 30 км от МКАД (1 км - 
+          span(class="heavy") 100 руб.
+          span )
+        .cost--list.d-flex
+          each item in cost
+            .cost--list__item.d-flex.col.ai-center
+              .cost--list__item-img.d-flex.ai-center.justify-center
+                img(src="img/icons/art-and-design.svg", alt="Площадь")
+              .cost--list__item-value.d-flex.col.al-center
+                span(class="value-param") Площадь
+                p(class="item-value")=item.value
+                  span м
+                    sup 2
+              .cost--list__item-price.d-flex.col.al-center
+                p(class="item-price") от
+                  span=item.price
+                  | руб/м
+                  sup 2
+              button(type="button" class="btn") Заказать со скидкой
+    .main-section.ourAdvantages.d-flex.col
+      img(src="img/our-advantages-bg.png", alt="ourAdvantages-bg" class="ourAdvantages-bg")
+      .box.col
+        h3(class="ourAdvantages--title") Наши преимущества
+        .ourAdvantages--list.d-flex.flex-wrap.justify-center
+          each item in ourAdvantages
+            .ourAdvantages--list__item.d-flex.flex-wrap
+              .ourAdvantages--list__item-header.d-flex
+                img(src=item.img, alt=item.name class="ourAdvantages--list__item-img")
+                span(class="ourAdvantages--list__item-name")=item.name
+              span(class="ourAdvantages--list__item-descr")=item.description
+    .main-section.screed.d-flex.col
+      .box.col
+        h3(class="screed--title") Выполняем полусухую стяжку в любых помещениях
+        p(class="screed--subtitle") Работаем с обьемом от
+          span 40м
+          sup 2
+        .screed--list.d-flex.flex-wrap
+          each item in screed
+            .screed--list__item.d-flex
+              img(src=item.img, alt=item.name)
+              .screed--list__item-name.d-flex.ai-center.justify-center
+                span=item.name
+    .main-section.salary.second-salary.d-flex.col
+      img(src="img/salary-bg2.png", alt="Second salary bg" class="second-salary-bg2")
+      .second-salary-bg3
+        img(src="img/salary-bg3.png", alt="Second salary bg")

@@ -132,11 +132,120 @@ select, input, textarea {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+.col-50 {
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  -webkit-box-flex: 0; }
+
+.text-center {
+  text-align: center; }
+
+.col-100 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%; }
+
 .d-flex {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+
+.row {
+  min-width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.col-50 {
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  -webkit-box-flex: 0; }
+
+.space-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.justify-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.ai-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.input {
+  background-color: white;
+  -webkit-box-shadow: 0px 9px 30px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 9px 30px 0px rgba(0, 0, 0, 0.15);
+  padding: 28px 35px;
+  -webkit-border-radius: 35px;
+          border-radius: 35px;
+  max-height: 70px; }
+  .input::-webkit-input-placeholder {
+    font-size: 15px;
+    font-family: "UniNeueRegular";
+    color: darkgray;
+    font-style: italic;
+    line-height: 1.467;
+    text-align: left; }
+  .input::-moz-placeholder {
+    font-size: 15px;
+    font-family: "UniNeueRegular";
+    color: darkgray;
+    font-style: italic;
+    line-height: 1.467;
+    text-align: left; }
+  .input::-ms-input-placeholder {
+    font-size: 15px;
+    font-family: "UniNeueRegular";
+    color: darkgray;
+    font-style: italic;
+    line-height: 1.467;
+    text-align: left; }
+  .input::placeholder {
+    font-size: 15px;
+    font-family: "UniNeueRegular";
+    color: darkgray;
+    font-style: italic;
+    line-height: 1.467;
+    text-align: left; }
+
+.orange-box {
+  background: #ff8400;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  -webkit-transform: skewX(-24deg);
+      -ms-transform: skewX(-24deg);
+          transform: skewX(-24deg);
+  font-size: 64px;
+  font-family: "UniNeueHeavy";
+  color: white;
+  line-height: 1.2;
+  text-align: center; }
+  .orange-box span {
+    -webkit-transform: skewX(24deg);
+        -ms-transform: skewX(24deg);
+            transform: skewX(24deg);
+    display: block; }
 
 .footer {
   height: 115px; }
@@ -293,6 +402,479 @@ select, input, textarea {
                 -o-transition: all 0.2s linear;
                 transition: all 0.2s linear; }
 
+.main .main-section {
+  position: relative;
+  width: 100%; }
+  .main .main-section.first {
+    width: 100%;
+    background-image: url("../img/main-bg1.png");
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+    height: 850px; }
+  .main .main-section .contacts__body {
+    margin-top: 40px;
+    margin-bottom: 100px; }
+    .main .main-section .contacts__body .contact-man-img {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+    .main .main-section .contacts__body .contacts__body--contacts .contacts--contact-section .contacts--contact-phone {
+      color: #fff; }
+  .main .main-section .main-banner--info {
+    max-width: 700px;
+    width: 100%; }
+    .main .main-section .main-banner--info__title {
+      font-size: 64px;
+      font-family: "UniNeueHeavy";
+      color: white;
+      line-height: 1.2;
+      text-align: left; }
+      .main .main-section .main-banner--info__title span {
+        font-family: "UniNeueBook"; }
+    .main .main-section .main-banner--info .orange-box {
+      width: 522px;
+      margin-bottom: 45px; }
+      .main .main-section .main-banner--info .orange-box span {
+        -webkit-transform: skewX(24deg);
+            -ms-transform: skewX(24deg);
+                transform: skewX(24deg);
+        display: block; }
+    .main .main-section .main-banner--info__text {
+      font-size: 22px;
+      font-family: "UniNeueRegular";
+      color: white;
+      line-height: 1.2;
+      text-align: left;
+      margin-bottom: 30px; }
+    .main .main-section .main-banner--info__services .service {
+      margin-bottom: 45px;
+      padding-left: 45px;
+      position: relative; }
+      .main .main-section .main-banner--info__services .service:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 30px;
+        height: 30px;
+        -webkit-background-size: 30px 30px;
+                background-size: 30px 30px;
+        background-image: url("../img/icons/check-mark.svg"); }
+      .main .main-section .main-banner--info__services .service--title {
+        font-size: 18px;
+        font-family: "UniNeueHeavy";
+        color: white;
+        line-height: 1.333;
+        text-align: left;
+        max-width: 250px;
+        margin-bottom: 5px; }
+      .main .main-section .main-banner--info__services .service--subtitle {
+        font-size: 18px;
+        font-family: "UniNeueRegular";
+        color: white;
+        line-height: 1.333;
+        text-align: left;
+        max-width: 250px; }
+  .main .main-section .main-banner--form {
+    max-width: 350px;
+    max-height: 400px;
+    width: 100%;
+    position: relative; }
+    .main .main-section .main-banner--form:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: block;
+      border: 15px solid rgba(255, 255, 255, 0.2); }
+    .main .main-section .main-banner--form form {
+      padding: 40px 30px;
+      position: relative;
+      z-index: 10;
+      left: 15px; }
+    .main .main-section .main-banner--form__title {
+      font-size: 26px;
+      font-family: "UniNeueHeavy";
+      color: white;
+      line-height: 0.846;
+      text-align: center;
+      margin-bottom: 30px; }
+    .main .main-section .main-banner--form__subtitle {
+      font-size: 18px;
+      font-family: "UniNeueRegular";
+      color: white;
+      line-height: 0.846;
+      text-align: center;
+      margin-bottom: 30px; }
+    .main .main-section .main-banner--form .input {
+      width: 100%;
+      margin-bottom: 20px; }
+    .main .main-section .main-banner--form .btn {
+      max-width: initial;
+      max-height: initial;
+      width: 100%;
+      height: 70px;
+      margin-bottom: 30px; }
+    .main .main-section .main-banner--form__agree {
+      font-size: 14px;
+      font-family: "UniNeueRegular";
+      color: white;
+      line-height: 1.286;
+      text-align: center; }
+  .main .main-section.advantages {
+    margin-top: 65px;
+    margin-bottom: 140px; }
+    .main .main-section.advantages .advantages--title {
+      font-size: 44px;
+      font-family: "UniNeueHeavy";
+      color: #212121;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 55px; }
+    .main .main-section.advantages .advantages-list__elem {
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      background-color: white;
+      -webkit-box-shadow: 0px 9px 30px 0px rgba(0, 0, 0, 0.15);
+              box-shadow: 0px 9px 30px 0px rgba(0, 0, 0, 0.15);
+      margin: 0px 15px 30px 15px;
+      border-radius: 5px;
+      width: 30%;
+      min-height: 180px;
+      position: relative; }
+      .main .main-section.advantages .advantages-list__elem .advantages-list__elem--image {
+        background-color: #ff8400;
+        width: 87px;
+        height: 87px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-border-radius: 5px 0px 50% 0px;
+                border-radius: 5px 0px 50% 0px;
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0; }
+        .main .main-section.advantages .advantages-list__elem .advantages-list__elem--image img {
+          max-width: 50px;
+          max-height: 50px; }
+      .main .main-section.advantages .advantages-list__elem .advantages-list__elem--info {
+        padding: 25px 20px;
+        position: relative;
+        z-index: 10; }
+        .main .main-section.advantages .advantages-list__elem .advantages-list__elem--info .advantages-list__elem--info__name {
+          font-size: 22px;
+          font-family: "UniNeueHeavy";
+          color: #212121;
+          line-height: 1.2;
+          text-align: left;
+          margin-bottom: 20px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%; }
+        .main .main-section.advantages .advantages-list__elem .advantages-list__elem--info .advantages-list__elem--info__descr {
+          font-size: 16px;
+          font-family: "UniNeueRegular";
+          color: #212121;
+          line-height: 1.5;
+          text-align: left; }
+      .main .main-section.advantages .advantages-list__elem .advantages-list__elem--number {
+        position: absolute;
+        right: 30px;
+        bottom: 40px;
+        font-size: 80px;
+        font-family: "UniNeueHeavy";
+        color: #f2f5fa;
+        line-height: 0.3;
+        z-index: 2; }
+  .main .main-section.salary.first-salary {
+    height: 420px;
+    position: relative; }
+    .main .main-section.salary.first-salary .salary-cube1 {
+      position: absolute;
+      z-index: 2;
+      right: 120px;
+      bottom: -95px;
+      max-width: 190px; }
+    .main .main-section.salary.first-salary .box {
+      height: 100%; }
+    .main .main-section.salary.first-salary .salary-man-img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding-right: 40px; }
+      .main .main-section.salary.first-salary .salary-man-img img {
+        position: relative;
+        top: 170px; }
+    .main .main-section.salary.first-salary .salary-bg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      -webkit-background-size: 100% 100%;
+              background-size: 100% 100%; }
+  .main .main-section.salary.second-salary {
+    height: 670px;
+    position: relative; }
+    .main .main-section.salary.second-salary .second-salary-bg2 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      -webkit-background-size: 100% 100%;
+              background-size: 100% 100%; }
+    .main .main-section.salary.second-salary .second-salary-bg3 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      width: 100%;
+      overflow: hidden; }
+      .main .main-section.salary.second-salary .second-salary-bg3 img {
+        position: relative;
+        right: 0;
+        bottom: -90px;
+        z-index: 999; }
+  .main .main-section.salary .salary--title {
+    max-width: 730px;
+    width: 100%;
+    margin-bottom: 55px;
+    font-size: 44px;
+    font-family: "UniNeueHeavy";
+    color: #212121;
+    line-height: 1.364;
+    text-align: left;
+    display: inline-block; }
+    .main .main-section.salary .salary--title .orange-box {
+      font-size: 44px;
+      font-family: "UniNeueHeavy";
+      line-height: 1.364;
+      text-align: left;
+      color: white;
+      display: inline-block;
+      margin-left: 10px;
+      padding: 0px 10px; }
+  .main .main-section.salary .salary--form {
+    max-width: 640px;
+    width: 100%;
+    position: relative; }
+    .main .main-section.salary .salary--form form {
+      position: relative;
+      z-index: 10; }
+      .main .main-section.salary .salary--form form .btn {
+        max-height: initial;
+        height: 65px;
+        position: absolute;
+        right: 0;
+        width: 260px;
+        -webkit-border-radius: 35px;
+                border-radius: 35px; }
+      .main .main-section.salary .salary--form form .input {
+        max-width: 450px;
+        height: 65px;
+        width: 100%; }
+    .main .main-section.salary .salary--form .salary--value {
+      font-size: 150px;
+      font-family: "UniNeueBlack";
+      color: white;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: left;
+      position: absolute;
+      top: 25px;
+      z-index: 0;
+      left: -125px; }
+  .main .main-section.cost {
+    padding: 95px 0px 90px 0px; }
+    .main .main-section.cost .cost--title {
+      font-size: 44px;
+      font-family: "UniNeueHeavy";
+      color: #212121;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 30px; }
+    .main .main-section.cost .const--info {
+      font-size: 22px;
+      font-family: "UniNeueRegular";
+      color: #212121;
+      line-height: 1.545;
+      text-align: center;
+      margin-bottom: 90px; }
+      .main .main-section.cost .const--info .heavy {
+        font-family: "UniNeueHeavy"; }
+    .main .main-section.cost .cost--list__item {
+      width: 100%;
+      margin-right: 30px;
+      background-color: white;
+      -webkit-box-shadow: 0px 9px 30px 0px rgba(0, 0, 0, 0.15);
+              box-shadow: 0px 9px 30px 0px rgba(0, 0, 0, 0.15);
+      position: relative;
+      padding: 75px 20px 35px 20px; }
+      .main .main-section.cost .cost--list__item:last-of-type {
+        margin-right: 0px; }
+      .main .main-section.cost .cost--list__item-img {
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        background: #ffffff;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+        width: 95px;
+        height: 95px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        -webkit-box-shadow: 0px -4px 5px 1px rgba(0, 0, 0, 0.05) inset;
+                box-shadow: 0px -4px 5px 1px rgba(0, 0, 0, 0.05) inset; }
+        .main .main-section.cost .cost--list__item-img:after {
+          content: '';
+          width: 80px;
+          height: 80px;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%;
+          display: block;
+          background: #f2f5fa;
+          z-index: 1;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
+        .main .main-section.cost .cost--list__item-img img {
+          max-width: 46px;
+          max-height: 46px;
+          position: relative;
+          z-index: 10; }
+      .main .main-section.cost .cost--list__item-value {
+        padding-bottom: 25px;
+        border-bottom: 1px solid #ebedef;
+        width: 100%; }
+        .main .main-section.cost .cost--list__item-value .value-param {
+          font-size: 17px;
+          font-family: "UniNeueRegular";
+          color: #838383;
+          line-height: 1.2;
+          text-align: center; }
+        .main .main-section.cost .cost--list__item-value .item-value {
+          font-size: 20px;
+          font-family: "UniNeueHeavy";
+          color: #212121;
+          line-height: 1.2;
+          text-align: center; }
+      .main .main-section.cost .cost--list__item-price {
+        padding: 25px 0px 30px 0px;
+        width: 100%; }
+        .main .main-section.cost .cost--list__item-price .item-price {
+          font-size: 18px;
+          font-family: "UniNeueHeavy";
+          color: #212121;
+          line-height: 1.2;
+          text-align: center; }
+          .main .main-section.cost .cost--list__item-price .item-price span {
+            font-size: 24px; }
+  .main .main-section.ourAdvantages {
+    position: relative;
+    padding-top: 95px;
+    padding-bottom: 160px; }
+    .main .main-section.ourAdvantages .ourAdvantages-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .main .main-section.ourAdvantages .ourAdvantages--title {
+      margin-bottom: 70px;
+      font-size: 44px;
+      font-family: "UniNeueHeavy";
+      color: white;
+      line-height: 1.2;
+      text-align: center; }
+    .main .main-section.ourAdvantages .ourAdvantages--list__item {
+      width: 30%;
+      margin: 0px 15px 30px 15px; }
+      .main .main-section.ourAdvantages .ourAdvantages--list__item .ourAdvantages--list__item-img {
+        max-width: 65px;
+        max-height: 65px;
+        margin-right: 25px; }
+      .main .main-section.ourAdvantages .ourAdvantages--list__item .ourAdvantages--list__item-name {
+        font-size: 22px;
+        font-family: "UniNeueHeavy";
+        color: white;
+        line-height: 1.2;
+        text-align: left; }
+      .main .main-section.ourAdvantages .ourAdvantages--list__item .ourAdvantages--list__item-descr {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        margin-top: 30px;
+        font-size: 16px;
+        font-family: "UniNeueRegular";
+        color: white;
+        line-height: 1.5;
+        text-align: left; }
+  .main .main-section.screed {
+    margin-bottom: 100px; }
+    .main .main-section.screed .screed--title {
+      font-size: 44px;
+      font-family: "UniNeueHeavy";
+      color: #212121;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 30px; }
+    .main .main-section.screed .screed--subtitle {
+      font-size: 22px;
+      font-family: "UniNeueRegular";
+      color: #212121;
+      line-height: 1.545;
+      text-align: center;
+      margin-bottom: 60px; }
+      .main .main-section.screed .screed--subtitle span {
+        font-family: "UniNeueHeavy"; }
+    .main .main-section.screed .screed--list__item {
+      margin: 0px 15px 30px 15px;
+      position: relative;
+      max-width: 350px;
+      width: 100%; }
+      .main .main-section.screed .screed--list__item-name {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        font-family: "UniNeueHeavy";
+        color: white;
+        line-height: 1.7;
+        text-align: center;
+        background-color: rgba(16, 27, 46, 0.5); }
+
 main {
   position: relative; }
 
@@ -308,7 +890,10 @@ main {
       -ms-flex-direction: column;
           flex-direction: column; }
   .main.contacts .contacts-main-section {
-    width: 100%; }
+    width: 100%;
+    max-height: 650px;
+    height: 100%;
+    overflow: hidden; }
     .main.contacts .contacts-main-section .contacts-main-banner-img {
       position: absolute;
       left: 0;
@@ -322,6 +907,10 @@ main {
       display: flex; }
     .main.contacts .contacts-main-section .contacts__body {
       margin-top: 40px; }
+      .main.contacts .contacts-main-section .contacts__body .contact-man-img {
+        position: absolute;
+        right: 0;
+        bottom: 0; }
       .main.contacts .contacts-main-section .contacts__body .contacts__body--contacts .contacts--contact-section .contacts--contact-phone {
         color: #fff; }
     .main.contacts .contacts-main-section .contacts__banner-info {
@@ -342,6 +931,10 @@ main {
   .main.contacts .contacts-map-section {
     width: 100%;
     position: relative; }
+    .main.contacts .contacts-map-section .contact-cube-img {
+      position: absolute;
+      left: 100px;
+      top: -110px; }
     .main.contacts .contacts-map-section .contacts-map-img {
       -o-object-fit: cover;
          object-fit: cover; }

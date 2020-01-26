@@ -27,29 +27,183 @@
             </nav>
           </div>
         </header>
-        <main class="main contacts">
-          <div class="contacts-main-section"><img class="contacts-main-banner-img" src="img/contact-bg.jpg" alt="">
+        <main class="main">
+          <div class="main-section first d-flex col">
             <div class="box col">
               <div class="contacts__body">
                 <div class="contacts__body--logo"><a href="/"><img src="img/logo-white.png" alt="Logo"></a></div>
                 <div class="contacts__body--contacts">
-                  <div class="contacts--contact-section"><a class="contacts--contact-phone" href="tel:74997777777">+7 (499) 777-77-77</a><a class="contacts--contact-phone" href="tel:79636939393">+7 (963) 693 93 93</a><span class="contacts--contact-time">ежедневно с 08:00 до 21:00</span></div>
+                  <div class="contacts--contact-section"><a class="contacts--contact-phone" href="tel:74997777777">777-77-77</a><a class="contacts--contact-phone" href="tel:79636939393">693 93 93</a><span class="contacts--contact-time">ежедневно с 08:00 до 21:00</span></div>
                   <button class="btn">Вызов замерщика</button>
                 </div>
               </div>
-              <div class="contacts__banner-info d-flex col">
-                <h1 class="contacts--title">Остались вопросы?</h1>
-                <h3 class="contacts--subtitle">Укажите имя и телефон - мы свяжемся с вами<br>в течение нескольких минут</h3>
-                <button class="btn">Получить консультацию</button>
+              <div class="main-banner d-flex space-between">
+                <div class="main-banner--info d-flex col">
+                  <h1 class="main-banner--info__title">Полусухая стяжка пола<br><span>любой сложности</span></h1>
+                  <div class="orange-box ai-center justify-center d-flex"><span> от 4000 руб./м2</span></div><span class="main-banner--info__text">Идеально ровный пол без трещин и неровностей за 1 день</span>
+                  <ul class="main-banner--info__services d-flex flex-wrap">
+                    <li class="service d-flex col col-50"><span class="service--title">Бесплатный замер</span><span class="service--subtitle">Замер в день обращения</span></li>
+                    <li class="service d-flex col col-50"><span class="service--title">Без предоплаты</span><span class="service--subtitle">Оплата по факту</span></li>
+                    <li class="service d-flex col col-50"><span class="service--title">Все включено</span><span class="service--subtitle">Материалы и доставка, уборка и вынос мусора включены в стоимость работ</span></li>
+                    <li class="service d-flex col col-50"><span class="service--title">Гарантия 5 лет</span><span class="service--subtitle">На все работы по договору</span></li>
+                  </ul>
+                </div>
+                <div class="main-banner--form d-flex col">
+                  <form class="d-flex col ai-center" action=""><span class="main-banner--form__title">Отправьте заявку</span><span class="main-banner--form__subtitle">и получите расчет стяжки<br> от наших специалистов</span>
+                    <input class="input" id="phone" name="phone" type="text" placeholder="Введите Ваш телефон">
+                    <button class="btn" type="submit">Заказать расчет стяжки</button><span class="main-banner--form__agree">Нажимая на кнопку я даю согласие на обработку своих персональных данных</span>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
-          <div class="contacts-map-section"><img class="contacts-map-img" src="img/map.png" alt="">
-            <div class="box">
-              <div class="map-card d-flex col">
-                <h2 class="map-card--title">Контакты</h2><a class="map-card--phone" href="tel:74997777777">+7 (499) 777-77-77</a><a class="map-card--phone" href="tel:79636939393">+7 (963) 693 93 93</a><span class="map-card--time">ежедневно с 08:00 до 21:00</span><span class="map-card--location">124365, город Москва, город Зеленоград, корпус 1619, эт 1 пом II ком 3 оф 27</span>
+          <div class="main-section advantages d-flex col">
+            <div class="box col ai-center">
+              <h3 class="advantages--title">Преимущества полусухой стяжки</h3>
+              <div class="advantages-list d-flex flex-wrap col-100 justify-center">
+                <div class="advantages-list__elem d-flex flex-column">
+                  <div class="advantages-list__elem--image"><img src="img/icons/wall-clock.svg" alt="12 часов"></div>
+                  <div class="advantages-list__elem--info"><span class="advantages-list__elem--info__name">12 часов</span><span class="advantages-list__elem--info__descr">Уже через 12 часов по полу можно ходить</span></div><span class="advantages-list__elem--number">01</span>
+                </div>
+                <div class="advantages-list__elem d-flex flex-column">
+                  <div class="advantages-list__elem--image"><img src="img/icons/wallet.svg" alt="Низка цена"></div>
+                  <div class="advantages-list__elem--info"><span class="advantages-list__elem--info__name">Низка цена</span><span class="advantages-list__elem--info__descr">Благодаря современной технологии полусухая стяжка дешевле других видов выравнивания полов.</span></div><span class="advantages-list__elem--number">02</span>
+                </div>
+                <div class="advantages-list__elem d-flex flex-column">
+                  <div class="advantages-list__elem--image"><img src="img/icons/like.svg" alt="Идеально ровно"></div>
+                  <div class="advantages-list__elem--info"><span class="advantages-list__elem--info__name">Идеально ровно</span><span class="advantages-list__elem--info__descr">Не требует дополнительного выравнивания наливным полом</span></div><span class="advantages-list__elem--number">03</span>
+                </div>
+                <div class="advantages-list__elem d-flex flex-column">
+                  <div class="advantages-list__elem--image"><img src="img/icons/no-water.svg" alt="Без протечек"></div>
+                  <div class="advantages-list__elem--info"><span class="advantages-list__elem--info__name">Без протечек</span><span class="advantages-list__elem--info__descr">При соблюдении технологии протечки исключены</span></div><span class="advantages-list__elem--number">04</span>
+                </div>
+                <div class="advantages-list__elem d-flex flex-column">
+                  <div class="advantages-list__elem--image"><img src="img/icons/floor.svg" alt="Универсально"></div>
+                  <div class="advantages-list__elem--info"><span class="advantages-list__elem--info__name">Универсально</span><span class="advantages-list__elem--info__descr">Подходит для всех типов помещений и видов напольных покрытий</span></div><span class="advantages-list__elem--number">05</span>
+                </div>
+                <div class="advantages-list__elem d-flex flex-column">
+                  <div class="advantages-list__elem--image"><img src="img/icons/group.svg" alt="Быстро"></div>
+                  <div class="advantages-list__elem--info"><span class="advantages-list__elem--info__name">Быстро</span><span class="advantages-list__elem--info__descr">Одна бригада, состоящая из пяти человек производит в день-250-300 кв.м стяжки</span></div><span class="advantages-list__elem--number">06</span>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="main-section salary first-salary d-flex col"><img class="salary-bg" src="img/salary-bg1.png" alt="Salary bg"><img class="salary-cube1 js-parallax" src="img/salary-cube.png" alt="Salary cube" data-size="10">
+            <div class="box col">
+              <div class="salary-man-img"><img class="js-parallax" src="img/salary-man.png" alt="Salary man" data-size="15"></div>
+              <h3 class="salary--title">Объединился с соседями – <br> получил
+                <p class="orange-box"><span>дополнительную скидку!</span></p>
+              </h3>
+              <div class="salary--form">
+                <form class="d-flex col-100" action="">
+                  <input class="input" id="salaryPhone" name="salaryPhone" type="text" placeholder="Введите Ваш телефон">
+                  <button class="btn" type="submit">Получить скидку</button>
+                </form>
+                <div class="span salary--value">Скидка</div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section cost d-flex col">
+            <div class="box col">
+              <h3 class="cost--title">Стоимость полусухой стяжки пола</h3>
+              <p class="const--info">Минимальный заказ - <span class="heavy">43 000 руб., </span><span>от 30 км от МКАД (1 км - </span><span class="heavy">100 руб.</span><span>)</span></p>
+              <div class="cost--list d-flex">
+                <div class="cost--list__item d-flex col ai-center">
+                  <div class="cost--list__item-img d-flex ai-center justify-center"><img src="img/icons/art-and-design.svg" alt="Площадь"></div>
+                  <div class="cost--list__item-value d-flex col al-center"><span class="value-param">Площадь</span>
+                    <p class="item-value">50-60<span>м<sup>2</sup></span></p>
+                  </div>
+                  <div class="cost--list__item-price d-flex col al-center">
+                    <p class="item-price">от<span>870</span>руб/м<sup>2</sup></p>
+                  </div>
+                  <button class="btn" type="button">Заказать со скидкой</button>
+                </div>
+                <div class="cost--list__item d-flex col ai-center">
+                  <div class="cost--list__item-img d-flex ai-center justify-center"><img src="img/icons/art-and-design.svg" alt="Площадь"></div>
+                  <div class="cost--list__item-value d-flex col al-center"><span class="value-param">Площадь</span>
+                    <p class="item-value">60-100<span>м<sup>2</sup></span></p>
+                  </div>
+                  <div class="cost--list__item-price d-flex col al-center">
+                    <p class="item-price">от<span>610</span>руб/м<sup>2</sup></p>
+                  </div>
+                  <button class="btn" type="button">Заказать со скидкой</button>
+                </div>
+                <div class="cost--list__item d-flex col ai-center">
+                  <div class="cost--list__item-img d-flex ai-center justify-center"><img src="img/icons/art-and-design.svg" alt="Площадь"></div>
+                  <div class="cost--list__item-value d-flex col al-center"><span class="value-param">Площадь</span>
+                    <p class="item-value">100-150<span>м<sup>2</sup></span></p>
+                  </div>
+                  <div class="cost--list__item-price d-flex col al-center">
+                    <p class="item-price">от<span>520</span>руб/м<sup>2</sup></p>
+                  </div>
+                  <button class="btn" type="button">Заказать со скидкой</button>
+                </div>
+                <div class="cost--list__item d-flex col ai-center">
+                  <div class="cost--list__item-img d-flex ai-center justify-center"><img src="img/icons/art-and-design.svg" alt="Площадь"></div>
+                  <div class="cost--list__item-value d-flex col al-center"><span class="value-param">Площадь</span>
+                    <p class="item-value">от 150<span>м<sup>2</sup></span></p>
+                  </div>
+                  <div class="cost--list__item-price d-flex col al-center">
+                    <p class="item-price">от<span>по запросу</span>руб/м<sup>2</sup></p>
+                  </div>
+                  <button class="btn" type="button">Заказать со скидкой</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section ourAdvantages d-flex col"><img class="ourAdvantages-bg" src="img/our-advantages-bg.png" alt="ourAdvantages-bg">
+            <div class="box col">
+              <h3 class="ourAdvantages--title">Наши преимущества</h3>
+              <div class="ourAdvantages--list d-flex flex-wrap justify-center">
+                <div class="ourAdvantages--list__item d-flex flex-wrap">
+                  <div class="ourAdvantages--list__item-header d-flex"><img class="ourAdvantages--list__item-img" src="img/icons/germany.svg" alt="Немецкое оборудование"><span class="ourAdvantages--list__item-name">Немецкое оборудование</span></div><span class="ourAdvantages--list__item-descr">Работаем на собственном оборудовании немецкого производства Putzmeister</span>
+                </div>
+                <div class="ourAdvantages--list__item d-flex flex-wrap">
+                  <div class="ourAdvantages--list__item-header d-flex"><img class="ourAdvantages--list__item-img" src="img/icons/construction-and-tools.svg" alt="Заливаем 250 м2 в день"><span class="ourAdvantages--list__item-name">Заливаем 250 м2 в день</span></div><span class="ourAdvantages--list__item-descr">Делаем стяжку пола со скоростью 250 м2 в день. Подарите себе легкий старт ремонта.</span>
+                </div>
+                <div class="ourAdvantages--list__item d-flex flex-wrap">
+                  <div class="ourAdvantages--list__item-header d-flex"><img class="ourAdvantages--list__item-img" src="img/icons/clock.svg" alt="Оперативно"><span class="ourAdvantages--list__item-name">Оперативно</span></div><span class="ourAdvantages--list__item-descr">Сегодня замер, завтра готовая стяжка</span>
+                </div>
+                <div class="ourAdvantages--list__item d-flex flex-wrap">
+                  <div class="ourAdvantages--list__item-header d-flex"><img class="ourAdvantages--list__item-img" src="img/icons/medal.svg" alt="Мастера с опытом от 8 лет"><span class="ourAdvantages--list__item-name">Мастера с опытом от 8 лет</span></div><span class="ourAdvantages--list__item-descr">Не рискуем вашим временем и деньгами, нанимая сторонних рабочих</span>
+                </div>
+                <div class="ourAdvantages--list__item d-flex flex-wrap">
+                  <div class="ourAdvantages--list__item-header d-flex"><img class="ourAdvantages--list__item-img" src="img/icons/cold.svg" alt="В любую погоду"><span class="ourAdvantages--list__item-name">В любую погоду</span></div><span class="ourAdvantages--list__item-descr">Делаем стяжку зимой пр итемпературе -25ОС</span>
+                </div>
+                <div class="ourAdvantages--list__item d-flex flex-wrap">
+                  <div class="ourAdvantages--list__item-header d-flex"><img class="ourAdvantages--list__item-img" src="img/icons/payment.svg" alt="Любая форма оплаты"><span class="ourAdvantages--list__item-name">Любая форма оплаты</span></div><span class="ourAdvantages--list__item-descr">Вы можете оплатить наличными, на расчётный счет или онлайн-платежом</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section screed d-flex col">
+            <div class="box col">
+              <h3 class="screed--title">Выполняем полусухую стяжку в любых помещениях</h3>
+              <p class="screed--subtitle">Работаем с обьемом от<span>40м</span><sup>2</sup></p>
+              <div class="screed--list d-flex flex-wrap">
+                <div class="screed--list__item d-flex"><img src="img/flats.png" alt="Квартиры">
+                  <div class="screed--list__item-name d-flex ai-center justify-center"><span>Квартиры</span></div>
+                </div>
+                <div class="screed--list__item d-flex"><img src="img/cotege.png" alt="Котеджи и дома">
+                  <div class="screed--list__item-name d-flex ai-center justify-center"><span>Котеджи и дома</span></div>
+                </div>
+                <div class="screed--list__item d-flex"><img src="img/offices.png" alt="Офисы">
+                  <div class="screed--list__item-name d-flex ai-center justify-center"><span>Офисы</span></div>
+                </div>
+                <div class="screed--list__item d-flex"><img src="img/parking.png" alt="Парковки">
+                  <div class="screed--list__item-name d-flex ai-center justify-center"><span>Парковки</span></div>
+                </div>
+                <div class="screed--list__item d-flex"><img src="img/auto.png" alt="Автосалоны и автосервисы">
+                  <div class="screed--list__item-name d-flex ai-center justify-center"><span>Автосалоны и автосервисы</span></div>
+                </div>
+                <div class="screed--list__item d-flex"><img src="img/factories.png" alt="Производственные помещения">
+                  <div class="screed--list__item-name d-flex ai-center justify-center"><span>Производственные помещения</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section salary second-salary d-flex col"><img class="second-salary-bg2" src="img/salary-bg2.png" alt="Second salary bg">
+            <div class="second-salary-bg3"><img src="img/salary-bg3.png" alt="Second salary bg"></div>
           </div>
         </main>
       </div>
@@ -70,6 +224,7 @@
     <script src="js/libs.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/paralax.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

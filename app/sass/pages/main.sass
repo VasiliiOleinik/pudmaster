@@ -1,87 +1,447 @@
-main
-	position: relative
-.main.contacts
-	display: flex
-	width: 100%
-	flex-direction: column
-	& .contacts-main-section
+.main
+	& .main-section
+		position: relative
 		width: 100%
-		& .contacts-main-banner-img
-			position: absolute
-			left: 0
-			top: 0
-			object-fit: cover
-		& .contacts-page-container
-			display: flex
+		&.first
+			width: 100%
+			background-image: url('../img/main-bg1.png')
+			background-size: 100% 100%
+			height: 850px
 		& .contacts__body
 			margin-top: 40px
+			margin-bottom: 100px
+			& .contact-man-img
+				position: absolute
+				right: 0
+				bottom: 0
 			& .contacts__body--contacts
 				& .contacts--contact-section
 					& .contacts--contact-phone
 						color: #fff
-		& .contacts__banner-info
-			margin: 135px 0px
-			& .contacts--title
-				font-size: 64px
-				font-family: "UniNeueHeavy"
-				color: rgb(255, 255, 255)
-				line-height: 1.2
-				text-align: left
-				margin-bottom: 35px
-			& .contacts--subtitle
-				font-size: 24px
-				color: rgb(255, 255, 255)
-				line-height: 1.2
-				text-align: left
-				margin-bottom: 55px
-	& .contacts-map-section
-		width: 100%
-		position: relative
-		& .contacts-map-img
-			object-fit: cover
-		& .box
-			position: absolute
-			top: 50%
-			left: 0
-			transform: translate(-50%, -50%)
-			height: 100%
-			left: 50%
-		& .map-card
-			border-radius: 5px
-			background-color: rgb(255, 255, 255)
-			box-shadow: 0px 9px 30px 0px rgba(0, 0, 0, 0.15)
-			width: 435px
-			height: 301px
-			position: absolute
-			top: 50%
-			left: 0
-			transform: translateY(-50%)
-			padding: 34px
-			&--title
+		& .main-banner
+			&--info
+				max-width: 700px
+				width: 100%
+				&__title
+					font-size: 64px
+					font-family: "UniNeueHeavy"
+					color: rgb(255, 255, 255)
+					line-height: 1.2
+					text-align: left
+					& span
+						font-family: "UniNeueBook"
+				& .orange-box
+					width: 522px
+					margin-bottom: 45px
+
+					& span
+						transform: skewX(24deg)
+						display: block
+				&__text
+					font-size: 22px
+					font-family: "UniNeueRegular"
+					color: rgb(255, 255, 255)
+					line-height: 1.2
+					text-align: left
+					margin-bottom: 30px
+				&__services
+					& .service
+						margin-bottom: 45px
+						padding-left: 45px
+						position: relative
+						&:before
+							content: ""
+							position: absolute
+							left: 0
+							top: 0
+							display: block
+							width: 30px
+							height: 30px
+							background-size: 30px 30px
+							background-image: url('../img/icons/check-mark.svg')
+						&--title
+							font-size: 18px
+							font-family: "UniNeueHeavy"
+							color: rgb(255, 255, 255)
+							line-height: 1.333
+							text-align: left
+							max-width: 250px
+							margin-bottom: 5px
+						&--subtitle
+							font-size: 18px
+							font-family: "UniNeueRegular"
+							color: rgb(255, 255, 255)
+							line-height: 1.333
+							text-align: left
+							max-width: 250px
+
+			&--form
+				max-width: 350px
+				max-height: 400px
+				width: 100%
+				position: relative
+				&:before
+					content: ''
+					position: absolute
+					left: 0
+					top: 0
+					width: 100%
+					height: 100%
+					z-index: 1
+					display: block
+					border: 15px solid rgba(255, 255, 255, .2)
+
+				& form
+					padding: 40px 30px
+					position: relative
+					z-index: 10
+					left: 15px
+				&__title
+					font-size: 26px
+					font-family: "UniNeueHeavy"
+					color: rgb(255, 255, 255)
+					line-height: 0.846
+					text-align: center
+					margin-bottom: 30px
+				&__subtitle
+					font-size: 18px
+					font-family: "UniNeueRegular"
+					color: rgb(255, 255, 255)
+					line-height: 0.846
+					text-align: center
+					margin-bottom: 30px
+				& .input
+					width: 100%
+					margin-bottom: 20px
+				& .btn
+					max-width: initial
+					max-height: initial
+					width: 100%
+					height: 70px
+					margin-bottom: 30px
+				&__agree
+					font-size: 14px
+					font-family: "UniNeueRegular"
+					color: rgb(255, 255, 255)
+					line-height: 1.286
+					text-align: center
+		&.advantages
+			margin-top: 65px
+			margin-bottom: 140px
+			& .advantages--title
 				font-size: 44px
 				font-family: "UniNeueHeavy"
 				color: rgb(33, 33, 33)
 				line-height: 1.2
+				text-align: center
+				margin-bottom: 55px
+			& .advantages-list__elem
+				border-radius: 5px
+				background-color: rgb(255, 255, 255)
+				box-shadow: 0px 9px 30px 0px rgba(0, 0, 0, 0.15)
+				margin: 0px 15px 30px 15px
+				border-radius: 5px
+				width: 30%
+				min-height: 180px
+				position: relative
+
+				& .advantages-list__elem--image
+					background-color: rgb(255, 132, 0)
+					width: 87px
+					height: 87px
+					display: flex
+					align-items: center
+					justify-content: center
+					border-radius: 5px 0px 50% 0px
+					flex-shrink: 0
+					& img
+						max-width: 50px
+						max-height: 50px
+				& .advantages-list__elem--info
+					padding: 25px 20px
+					position: relative
+					z-index: 10
+					& .advantages-list__elem--info__name
+						font-size: 22px
+						font-family: "UniNeueHeavy"
+						color: rgb(33, 33, 33)
+						line-height: 1.2
+						text-align: left
+						margin-bottom: 20px
+						display: flex
+						width: 100%
+					& .advantages-list__elem--info__descr
+						font-size: 16px
+						font-family: "UniNeueRegular"
+						color: rgb(33, 33, 33)
+						line-height: 1.5
+						text-align: left
+				& .advantages-list__elem--number
+					position: absolute
+					right: 30px
+					bottom: 40px
+					font-size: 80px
+					font-family: "UniNeueHeavy"
+					color: rgb(242, 245, 250)
+					line-height: 0.3
+					z-index: 2
+		&.salary
+			&.first-salary
+				height: 420px
+				position: relative
+				& .salary-cube1
+					position: absolute;
+					z-index: 2
+					right: 120px
+					bottom: -95px
+					max-width: 190px
+				& .box
+					height: 100%
+				& .salary-man-img
+					position: absolute
+					right: 0
+					bottom: 0
+					overflow: hidden
+					width: 100%
+					display: flex
+					justify-content: flex-end
+					padding-right: 40px
+
+					& img
+						position: relative
+						top: 170px
+				& .salary-bg
+					position: absolute
+					bottom: 0
+					left: 0
+					z-index: -1
+					background-size: 100% 100%
+			&.second-salary
+				height: 670px
+				position: relative
+				& .second-salary-bg2
+					position: absolute
+					bottom: 0
+					left: 0
+					z-index: -1
+					background-size: 100% 100%
+				& .second-salary-bg3
+					position: absolute
+					bottom: 0
+					right: 0
+					z-index: 1
+					width: 100%
+					overflow: hidden
+
+					& img
+						position: relative
+						right: 0
+						bottom: -90px
+						z-index: 999
+			& .salary--title
+				max-width: 730px
+				width: 100%
+				margin-bottom: 55px
+				font-size: 44px
+				font-family: "UniNeueHeavy"
+				color: rgb(33, 33, 33)
+				line-height: 1.364
 				text-align: left
-				margin-bottom: 30px
-			&--phone
-				font-size: 20px
+				display: inline-block
+				& .orange-box
+					font-size: 44px
+					font-family: "UniNeueHeavy"
+					line-height: 1.364
+					text-align: left
+					color: rgb(255, 255, 255)
+					display: inline-block
+					margin-left: 10px
+					padding: 0px 10px
+			& .salary--form
+				max-width: 640px
+				width: 100%
+				position: relative
+				& form
+					position: relative
+					z-index: 10
+					& .btn
+						max-height: initial
+						height: 65px
+						position: absolute;
+						right: 0
+						width: 260px
+						border-radius: 35px
+					& .input
+						max-width: 450px
+						height: 65px
+						width: 100%
+				& .salary--value
+					font-size: 150px
+					font-family: "UniNeueBlack"
+					color: rgb(255, 255, 255)
+					text-transform: uppercase
+					line-height: 1.2
+					text-align: left
+					position: absolute
+					top: 25px
+					z-index: 0
+					left: -125px
+		&.cost
+			padding: 95px 0px 90px 0px
+
+			& .cost--title
+				font-size: 44px
 				font-family: "UniNeueHeavy"
 				color: rgb(33, 33, 33)
 				line-height: 1.2
-			&--time
-				margin-top: 15px
-				font-size: 14px
-				color: #878787
-				font-family: "UniNeueRegular"
-				line-height: 1.2
-				margin: 15px 0px 30px 0px
-			&--location
-				font-size: 18px
+				text-align: center
+				margin-bottom: 30px
+			& .const--info
+				font-size: 22px
 				font-family: "UniNeueRegular"
 				color: rgb(33, 33, 33)
-				line-height: 1.333
-				text-align: left
+				line-height: 1.545
+				text-align: center
+				margin-bottom: 90px
+				& .heavy
+					font-family: "UniNeueHeavy"
+			& .cost--list__item
+				width: 100%
+				margin-right: 30px
+				background-color: rgb(255, 255, 255)
+				box-shadow: 0px 9px 30px 0px rgba(0, 0, 0, 0.15)
+				position: relative
+				padding: 75px 20px 35px 20px
+				&:last-of-type
+					margin-right: 0px
+				&-img
+					position: absolute
+					top: -50px
+					left: 50%
+					background: #ffffff
+					transform: translateX(-50%)
+					width: 95px
+					height: 95px
+					border-radius: 50%
+					box-shadow: 0px -4px 5px 1px rgba(0, 0, 0, 0.05) inset
+					&:after
+						content: ''
+						width: 80px
+						height: 80px
+						border-radius: 50%
+						display: block
+						background: #f2f5fa
+						z-index: 1
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
 
+					& img
+						max-width: 46px
+						max-height: 46px
+						position: relative
+						z-index: 10
+				&-value
+					padding-bottom: 25px
+					border-bottom: 1px solid #ebedef
+					width: 100%
+					& .value-param
+						font-size: 17px
+						font-family: "UniNeueRegular"
+						color: #838383
+						line-height: 1.2
+						text-align: center
+					& .item-value
+						font-size: 20px
+						font-family: "UniNeueHeavy"
+						color: #212121
+						line-height: 1.2
+						text-align: center
+				&-price
+					padding: 25px 0px 30px 0px
+					width: 100%
+					& .item-price
+						font-size: 18px
+						font-family: "UniNeueHeavy"
+						color: rgb(33, 33, 33)
+						line-height: 1.2
+						text-align: center
+						& span
+							font-size: 24px
+		&.ourAdvantages
+			position: relative
+			padding-top: 95px
+			padding-bottom: 160px
+			& .ourAdvantages-bg
+				position: absolute
+				top: 0
+				left: 0
+				object-fit: cover
+			& .ourAdvantages--title
+				margin-bottom: 70px
+				font-size: 44px
+				font-family: "UniNeueHeavy"
+				color: rgb(255, 255, 255)
+				line-height: 1.2
+				text-align: center
+			& .ourAdvantages--list__item
+				width: 30%
+				margin: 0px 15px 30px 15px
+				& .ourAdvantages--list__item-img
+					max-width: 65px
+					max-height: 65px
+					margin-right: 25px
+				& .ourAdvantages--list__item-name
+					font-size: 22px
+					font-family: "UniNeueHeavy"
+					color: rgb(255, 255, 255)
+					line-height: 1.2
+					text-align: left
+				& .ourAdvantages--list__item-descr
+					display: flex
+					width: 100%
+					margin-top: 30px
+					font-size: 16px
+					font-family: "UniNeueRegular"
+					color: rgb(255, 255, 255)
+					line-height: 1.5
+					text-align: left
+		&.screed
+			margin-bottom: 100px
+			& .screed--title
+				font-size: 44px
+				font-family: "UniNeueHeavy"
+				color: rgb(33, 33, 33)
+				line-height: 1.2
+				text-align: center
+				margin-bottom: 30px
+			& .screed--subtitle
+				font-size: 22px
+				font-family: "UniNeueRegular"
+				color: rgb(33, 33, 33)
+				line-height: 1.545
+				text-align: center
+				margin-bottom: 60px
 
+				& span
+					font-family: "UniNeueHeavy"
+			& .screed--list__item
+				margin: 0px 15px 30px 15px
+				position: relative
+				max-width: 350px
+				width: 100%
+
+				&-name
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					height: 50px
+					font-size: 20px
+					font-family: "UniNeueHeavy"
+					color: rgb(255, 255, 255)
+					line-height: 1.7
+					text-align: center
+					background-color: rgba(16, 27, 46, .5)
 

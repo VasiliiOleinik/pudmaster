@@ -1,0 +1,31 @@
+extends blocks/_layout
+append content
+	main.main.contacts
+		.contacts-main-section
+			img(src="img/contact-bg.jpg", alt="Contact bg" class="contacts-main-banner-img")
+			.box.col
+				.contacts__body
+					img(src="img/cont-man.png", alt="Man paralax" class="contact-man-img js-parallax" data-size="15")
+					.contacts__body--logo
+						a(href="/")
+							img(src="img/logo-white.png", alt="Logo")
+					.contacts__body--contacts
+						.contacts--contact-section
+							a(class="contacts--contact-phone" href="tel:74997777777") +7 (499) 777-77-77
+							a(class="contacts--contact-phone" href="tel:79636939393") +7 (963) 693 93 93
+							span(class="contacts--contact-time") ежедневно с 08:00 до 21:00
+						button(class="btn") Вызов замерщика
+				.contacts__banner-info.d-flex.col
+					h1(class="contacts--title") Остались вопросы?
+					h3(class="contacts--subtitle") Укажите имя и телефон - мы свяжемся с вами<br>в течение нескольких минут
+					button(class="btn") Получить консультацию
+		.contacts-map-section
+			img(src="img/cube.png", alt="Cube paralax"  class="contact-cube-img js-parallax" data-size="10")
+			img(src="img/map.png", alt="Map img" class="contacts-map-img")
+			.box
+				.map-card.d-flex.col
+					h2(class="map-card--title") Контакты
+					a(class="map-card--phone" href="tel:74997777777") +7 (499) 777-77-77
+					a(class="map-card--phone" href="tel:79636939393") +7 (963) 693 93 93
+					span(class="map-card--time") ежедневно с 08:00 до 21:00
+					span(class="map-card--location") 124365, город Москва, город Зеленоград, корпус 1619, эт 1 пом II ком 3 оф 27
