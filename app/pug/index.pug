@@ -239,7 +239,8 @@ append content
               a(class="contacts--contact-phone" href="tel:74997777777") 777-77-77
               a(class="contacts--contact-phone" href="tel:79636939393") 693 93 93
               span(class="contacts--contact-time") ежедневно с 08:00 до 21:00
-            button(class="btn") Вызов замерщика
+            button(class="btn" type="button")
+              span Вызов замерщика
         .main-banner.d-flex.space-between
           .main-banner--info.d-flex.col
             h1(class="main-banner--info__title") Полусухая стяжка пола<br>
@@ -257,7 +258,8 @@ append content
               span(class="main-banner--form__title") Отправьте заявку
               span(class="main-banner--form__subtitle") и получите расчет стяжки<br> от наших специалистов
               input(class="input" id="phone" name="phone" type="text" placeholder="Введите Ваш телефон")
-              button(class="btn" type="submit") Заказать расчет стяжки
+              button(class="btn" type="submit")
+                span Заказать расчет стяжки
               span(class="main-banner--form__agree") Нажимая на кнопку я даю согласие на обработку своих персональных данных
     .main-section.advantages.d-flex.col
       .box.col.ai-center
@@ -284,7 +286,8 @@ append content
         .salary--form
           form(class="d-flex col-100" action="")
             input(class="input" id="salaryPhone" name="salaryPhone" type="text" placeholder="Введите Ваш телефон")
-            button(class="btn" type="submit") Получить скидку
+            button(class="btn" type="submit")
+              span Получить скидку
           .span(class="salary--value") Скидка
     .main-section.cost.d-flex.col
       .box.col
@@ -309,7 +312,8 @@ append content
                   span=item.price
                   | руб/м
                   sup 2
-              button(class="btn" type="button") Заказать со скидкой
+              button(class="btn" type="button")
+                span Заказать со скидкой
     .main-section.ourAdvantages.d-flex.col
       img(class="ourAdvantages-bg", src="img/our-advantages-bg.png", alt="ourAdvantages-bg")
       .box.col
@@ -348,7 +352,8 @@ append content
           .salary--form
             form(class="d-flex col-100" action="")
               input(class="input" id="salaryPhone" name="salaryPhone" type="text" placeholder="Введите Ваш телефон")
-              button(class="btn" type="submit") Получить скидку
+              button(class="btn" type="submit")
+                span Получить скидку
             .span(class="salary--value") Скидка
     .main-section.materials.d-flex.col
       .box.col
@@ -376,7 +381,8 @@ append content
         .salary--form
             form(class="d-flex col-100" action="")
               input(class="input" id="salaryPhone" name="salaryPhone" type="text" placeholder="Введите Ваш телефон")
-              button(class="btn" type="submit") Заказать консультацию
+              button(class="btn" type="submit")
+                span Заказать консультацию
     .main-section.reviews.d-flex.col
       .box.col
         h3(class="reviews--title") Отзывы наших клиентов
@@ -395,6 +401,8 @@ append content
       .box.col
         h3(class="process--title") Процесс полусухой стяжки пола
         .process--list.d-flex
+          svg(class="process--line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="939px" height="38px")
+            path(fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-dasharray="4, 4" stroke-linecap="round" stroke-linejoin="miter" opacity="0.302" fill="none" d="M2.000,33.000 C2.000,33.000 462.937,-39.404 936.000,34.000")
           each item in process
             .process--list__elem.d-flex.col.ai-center
               span(class="process--list__elem-number d-flex ai-center justify-center")=item.num
@@ -410,7 +418,8 @@ append content
                 img(src=item.img, alt=item.name)
               span(class="portfolio--slider__item-name")=item.name
               span(class="portfolio--slider__item-descr")=item.desr
-              button(type="button" class="btn") Хочу такой же пол!
+              button(type="button" class="btn")
+                span Хочу такой же пол!
         .portfolio--slider__nav
           button(class="portfolio--slider__prev" type="button")
             svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px")
