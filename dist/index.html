@@ -4,38 +4,364 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="assets/img/favicon.ico" rel="shortcut icon">
+    <link type="text/css" href="fonts/fonts.css" rel="stylesheet">
     <link type="text/css" href="css/libs.min.css" rel="stylesheet">
     <link type="text/css" href="css/jquery-ui.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery.scrollbar.css">
-    <link rel="stylesheet" href="css/scroll.css">
-    <link type="text/css" href="css/intlTelInput.css" rel="stylesheet">
-    <link type="text/css" href="css/scroll.css" rel="stylesheet">
+    <link type="text/css" href="css/hamburgers.css" rel="stylesheet">
     <link type="text/css" href="css/main.css" rel="stylesheet">
-    <title>Luxten</title>
+    <title>PUDMASTER</title>
   </head>
-  <body class="start"><img class="start-img" src="img/main-img.png" alt="">
+  <body>
     <div class="content-wrapper" id="contentWrapper">
       <div class="page-wrapper" id="pageWrapper">
+        <div class="mobile-menu">
+          <ul class="mobile-menu--list">
+            <li class="mobile-menu--list__elem"><a class="mobile-menu__elem-link" href="/">Главная</a></li>
+            <li class="mobile-menu--list__elem"><a class="mobile-menu__elem-link" href="/">Преимущества</a></li>
+            <li class="mobile-menu--list__elem"><a class="mobile-menu__elem-link" href="/">Цены</a></li>
+            <li class="mobile-menu--list__elem"><a class="mobile-menu__elem-link" href="/">Портфолио</a></li>
+            <li class="mobile-menu--list__elem"><a class="mobile-menu__elem-link" href="/">Оборудование</a></li>
+            <li class="mobile-menu--list__elem"><a class="mobile-menu__elem-link" href="/">Контакты</a></li>
+          </ul>
+        </div>
         <header class="header">
-          <div class="box">
-            <div class="header__body">
-              <div class="header__logo"><a href="/"><img src="img/logo.svg" alt="Logo"></a></div>
-              <div class="header__navig"><a class="header__navig-link register" href="register.html"><img src="img/reg.svg" alt="Registration"><span>Регистрация</span></a><a class="header__navig-link" href="login.html"><img src="img/login.svg" alt="Login"><span>Вход</span></a></div>
-            </div>
+          <button class="hamburger hamburger--collapse" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+          <div class="header__body">
+            <nav class="header__body-navigation">
+              <ul class="navigation--list">
+                <li class="navigation--list__elem"><a class="navigation--list__elem-link" href="/">Главная</a></li>
+                <li class="navigation--list__elem"><a class="navigation--list__elem-link" href="/">Преимущества</a></li>
+                <li class="navigation--list__elem"><a class="navigation--list__elem-link" href="/">Цены</a></li>
+                <li class="navigation--list__elem"><a class="navigation--list__elem-link" href="/">Портфолио</a></li>
+                <li class="navigation--list__elem"><a class="navigation--list__elem-link" href="/">Оборудование</a></li>
+                <li class="navigation--list__elem"><a class="navigation--list__elem-link" href="/">Контакты</a></li>
+              </ul>
+            </nav>
           </div>
         </header>
-        <main class="main main-page">
-          <div class="box">
-            <div class="main-content only-main">
-              <h1 class="main-content__title">Мгновенно инвестируйте в любое время, в любом месте</h1>
-              <h3 class="main-content__subtitle">
-                Инвестировать становиться как никогда простым.Наша платформа позволит Вам не задумываясь получать прибыль от своих инвестиций,
-                легко планировать бюджет и зарабатывать каждую секунду
+        <main class="main">
+          <div class="main-section first d-flex col">
+            <div class="box col">
+              <div class="contacts__body">
+                <div class="contacts__body--logo main"><a href="/"><img src="img/logo-white.png" alt="Logo"></a></div>
+                <div class="contacts__body--contacts">
+                  <div class="contacts--contact-section"><a class="contacts--contact-phone" href="tel:74997777777">+7 (499) 777-77-77</a><a class="contacts--contact-phone" href="tel:79636939393">+7 (796) 693 93 93</a><span class="contacts--contact-time">ежедневно с 08:00 до 21:00</span></div>
+                  <button class="btn" type="button"><span>Вызов замерщика</span></button>
+                </div>
+              </div>
+              <div class="main-banner d-flex space-between">
+                <div class="main-banner--info d-flex col">
+                  <h1 class="main-banner--info__title">Полусухая стяжка пола<br><span>любой сложности</span></h1>
+                  <div class="orange-box ai-center justify-center d-flex"><span> от 4000 руб./м2</span></div><span class="main-banner--info__text">Идеально ровный пол без трещин и неровностей за 1 день</span>
+                  <ul class="main-banner--info__services d-flex flex-wrap">
+                    <li class="service d-flex col col-50"><span class="service--title">Бесплатный замер</span><span class="service--subtitle">Замер в день обращения</span></li>
+                    <li class="service d-flex col col-50"><span class="service--title">Без предоплаты</span><span class="service--subtitle">Оплата по факту</span></li>
+                    <li class="service d-flex col col-50"><span class="service--title">Все включено</span><span class="service--subtitle">Материалы и доставка, уборка и вынос мусора включены в стоимость работ</span></li>
+                    <li class="service d-flex col col-50"><span class="service--title">Гарантия 5 лет</span><span class="service--subtitle">На все работы по договору</span></li>
+                  </ul>
+                </div>
+                <div class="main-banner--form d-flex col">
+                  <form class="d-flex col ai-center" action=""><span class="main-banner--form__title">Отправьте заявку</span><span class="main-banner--form__subtitle">и получите расчет стяжки<br> от наших специалистов</span>
+                    <input class="input" id="phone" name="phone" type="text" placeholder="Введите Ваш телефон">
+                    <button class="btn" type="submit"><span>Заказать расчет стяжки</span></button><span class="main-banner--form__agree">Нажимая на кнопку я даю согласие на обработку своих персональных данных</span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section advantages d-flex col">
+            <div class="box col ai-center">
+              <h3 class="advantages--title">Преимущества полусухой стяжки</h3>
+              <div class="advantages-list d-flex flex-wrap col-100 justify-center">
+                <div class="advantages-list__elem d-flex flex-column">
+                  <div class="advantages-list__elem--image"><img src="img/icons/wall-clock.svg" alt="12 часов"></div>
+                  <div class="advantages-list__elem--info"><span class="advantages-list__elem--info__name">12 часов</span><span class="advantages-list__elem--info__descr">Уже через 12 часов по полу можно ходить</span></div><span class="advantages-list__elem--number">01</span>
+                </div>
+                <div class="advantages-list__elem d-flex flex-column">
+                  <div class="advantages-list__elem--image"><img src="img/icons/wallet.svg" alt="Низка цена"></div>
+                  <div class="advantages-list__elem--info"><span class="advantages-list__elem--info__name">Низка цена</span><span class="advantages-list__elem--info__descr">Благодаря современной технологии полусухая стяжка дешевле других видов выравнивания полов.</span></div><span class="advantages-list__elem--number">02</span>
+                </div>
+                <div class="advantages-list__elem d-flex flex-column">
+                  <div class="advantages-list__elem--image"><img src="img/icons/like.svg" alt="Идеально ровно"></div>
+                  <div class="advantages-list__elem--info"><span class="advantages-list__elem--info__name">Идеально ровно</span><span class="advantages-list__elem--info__descr">Не требует дополнительного выравнивания наливным полом</span></div><span class="advantages-list__elem--number">03</span>
+                </div>
+                <div class="advantages-list__elem d-flex flex-column">
+                  <div class="advantages-list__elem--image"><img src="img/icons/no-water.svg" alt="Без протечек"></div>
+                  <div class="advantages-list__elem--info"><span class="advantages-list__elem--info__name">Без протечек</span><span class="advantages-list__elem--info__descr">При соблюдении технологии протечки исключены</span></div><span class="advantages-list__elem--number">04</span>
+                </div>
+                <div class="advantages-list__elem d-flex flex-column">
+                  <div class="advantages-list__elem--image"><img src="img/icons/floor.svg" alt="Универсально"></div>
+                  <div class="advantages-list__elem--info"><span class="advantages-list__elem--info__name">Универсально</span><span class="advantages-list__elem--info__descr">Подходит для всех типов помещений и видов напольных покрытий</span></div><span class="advantages-list__elem--number">05</span>
+                </div>
+                <div class="advantages-list__elem d-flex flex-column">
+                  <div class="advantages-list__elem--image"><img src="img/icons/group.svg" alt="Быстро"></div>
+                  <div class="advantages-list__elem--info"><span class="advantages-list__elem--info__name">Быстро</span><span class="advantages-list__elem--info__descr">Одна бригада, состоящая из пяти человек производит в день-250-300 кв.м стяжки</span></div><span class="advantages-list__elem--number">06</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section salary first-salary d-flex col"><img class="salary-bg" src="img/salary-bg1.png" alt="Salary bg">
+            <div class="salary-cube1"><img class="js-parallax" data-size="10" src="img/salary-cube.png" alt="Salary cube"></div>
+            <div class="box col">
+              <div class="salary-man-img"><img class="js-parallax" data-size="15" src="img/salary-man.png" alt="Salary man"></div>
+              <h3 class="salary--title">Объединился с соседями – <br> получил
+                <p class="orange-box"><span>дополнительную скидку!</span></p>
               </h3>
-              <div class="main-content__main-buttons"><a class="main-button active" href="register.html">Начать инвестировать</a><a class="main-button plans" href="plans.html">Тарифные планы</a></div>
-              <p class="main-content__info"><img src="img/chip.svg" alt="Chip"><span>100% SSL транзакции. Безопасность платежей Наши сервера защищены от DDOS- атак.</span></p>
+              <div class="salary--form">
+                <form class="d-flex col-100" action="">
+                  <input class="input" id="salaryPhone" name="salaryPhone" type="text" placeholder="Введите Ваш телефон">
+                  <button class="btn" type="submit"><span>Получить скидку</span></button>
+                </form>
+                <div class="span salary--value">Скидка</div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section cost d-flex col">
+            <div class="box col">
+              <h3 class="cost--title">Стоимость полусухой стяжки пола</h3>
+              <p class="const--info">Минимальный заказ - <span class="heavy">43 000 руб., </span><span>от 30 км от МКАД (1 км - </span><span class="heavy">100 руб.</span><span>)</span></p>
+              <div class="cost--list d-flex">
+                <div class="cost--list__item d-flex col ai-center">
+                  <div class="cost--list__item-img d-flex ai-center justify-center"><img src="img/icons/art-and-design.svg" alt="Площадь"></div>
+                  <div class="cost--list__item-value d-flex col al-center"><span class="value-param">Площадь</span>
+                    <p class="item-value">50-60<span>м<sup>2</sup></span></p>
+                  </div>
+                  <div class="cost--list__item-price d-flex col al-center">
+                    <p class="item-price">от<span>870</span>руб/м<sup>2</sup></p>
+                  </div>
+                  <button class="btn" type="button"><span>Заказать со скидкой</span></button>
+                </div>
+                <div class="cost--list__item d-flex col ai-center">
+                  <div class="cost--list__item-img d-flex ai-center justify-center"><img src="img/icons/art-and-design.svg" alt="Площадь"></div>
+                  <div class="cost--list__item-value d-flex col al-center"><span class="value-param">Площадь</span>
+                    <p class="item-value">60-100<span>м<sup>2</sup></span></p>
+                  </div>
+                  <div class="cost--list__item-price d-flex col al-center">
+                    <p class="item-price">от<span>610</span>руб/м<sup>2</sup></p>
+                  </div>
+                  <button class="btn" type="button"><span>Заказать со скидкой</span></button>
+                </div>
+                <div class="cost--list__item d-flex col ai-center">
+                  <div class="cost--list__item-img d-flex ai-center justify-center"><img src="img/icons/art-and-design.svg" alt="Площадь"></div>
+                  <div class="cost--list__item-value d-flex col al-center"><span class="value-param">Площадь</span>
+                    <p class="item-value">100-150<span>м<sup>2</sup></span></p>
+                  </div>
+                  <div class="cost--list__item-price d-flex col al-center">
+                    <p class="item-price">от<span>520</span>руб/м<sup>2</sup></p>
+                  </div>
+                  <button class="btn" type="button"><span>Заказать со скидкой</span></button>
+                </div>
+                <div class="cost--list__item d-flex col ai-center">
+                  <div class="cost--list__item-img d-flex ai-center justify-center"><img src="img/icons/art-and-design.svg" alt="Площадь"></div>
+                  <div class="cost--list__item-value d-flex col al-center"><span class="value-param">Площадь</span>
+                    <p class="item-value">от 150<span>м<sup>2</sup></span></p>
+                  </div>
+                  <div class="cost--list__item-price d-flex col al-center">
+                    <p class="item-price">от<span>по запросу</span>руб/м<sup>2</sup></p>
+                  </div>
+                  <button class="btn" type="button"><span>Заказать со скидкой</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section ourAdvantages d-flex col"><img class="ourAdvantages-bg" src="img/our-advantages-bg.png" alt="ourAdvantages-bg">
+            <div class="box col">
+              <h3 class="ourAdvantages--title">Наши преимущества</h3>
+              <div class="ourAdvantages--list d-flex flex-wrap justify-center">
+                <div class="ourAdvantages--list__item d-flex flex-wrap">
+                  <div class="ourAdvantages--list__item-header d-flex"><img class="ourAdvantages--list__item-img" src="img/icons/germany.svg" alt="Немецкое оборудование"><span class="ourAdvantages--list__item-name">Немецкое оборудование</span></div><span class="ourAdvantages--list__item-descr">Работаем на собственном оборудовании немецкого производства Putzmeister</span>
+                </div>
+                <div class="ourAdvantages--list__item d-flex flex-wrap">
+                  <div class="ourAdvantages--list__item-header d-flex"><img class="ourAdvantages--list__item-img" src="img/icons/construction-and-tools.svg" alt="Заливаем 250 м2 в день"><span class="ourAdvantages--list__item-name">Заливаем 250 м2 в день</span></div><span class="ourAdvantages--list__item-descr">Делаем стяжку пола со скоростью 250 м2 в день. Подарите себе легкий старт ремонта.</span>
+                </div>
+                <div class="ourAdvantages--list__item d-flex flex-wrap">
+                  <div class="ourAdvantages--list__item-header d-flex"><img class="ourAdvantages--list__item-img" src="img/icons/clock.svg" alt="Оперативно"><span class="ourAdvantages--list__item-name">Оперативно</span></div><span class="ourAdvantages--list__item-descr">Сегодня замер, завтра готовая стяжка</span>
+                </div>
+                <div class="ourAdvantages--list__item d-flex flex-wrap">
+                  <div class="ourAdvantages--list__item-header d-flex"><img class="ourAdvantages--list__item-img" src="img/icons/medal.svg" alt="Мастера с опытом от 8 лет"><span class="ourAdvantages--list__item-name">Мастера с опытом от 8 лет</span></div><span class="ourAdvantages--list__item-descr">Не рискуем вашим временем и деньгами, нанимая сторонних рабочих</span>
+                </div>
+                <div class="ourAdvantages--list__item d-flex flex-wrap">
+                  <div class="ourAdvantages--list__item-header d-flex"><img class="ourAdvantages--list__item-img" src="img/icons/cold.svg" alt="В любую погоду"><span class="ourAdvantages--list__item-name">В любую погоду</span></div><span class="ourAdvantages--list__item-descr">Делаем стяжку зимой пр итемпературе -25ОС</span>
+                </div>
+                <div class="ourAdvantages--list__item d-flex flex-wrap">
+                  <div class="ourAdvantages--list__item-header d-flex"><img class="ourAdvantages--list__item-img" src="img/icons/payment.svg" alt="Любая форма оплаты"><span class="ourAdvantages--list__item-name">Любая форма оплаты</span></div><span class="ourAdvantages--list__item-descr">Вы можете оплатить наличными, на расчётный счет или онлайн-платежом</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section screed d-flex col">
+            <div class="box col">
+              <h3 class="screed--title">Выполняем полусухую стяжку в любых помещениях</h3>
+              <p class="screed--subtitle">Работаем с обьемом от<span>40м</span><sup>2</sup></p>
+              <div class="screed--list d-flex flex-wrap">
+                <div class="screed--list__item d-flex"><img src="img/flats.png" alt="Квартиры">
+                  <div class="screed--list__item-name d-flex ai-center justify-center"><span>Квартиры</span></div>
+                </div>
+                <div class="screed--list__item d-flex"><img src="img/cotege.png" alt="Котеджи и дома">
+                  <div class="screed--list__item-name d-flex ai-center justify-center"><span>Котеджи и дома</span></div>
+                </div>
+                <div class="screed--list__item d-flex"><img src="img/offices.png" alt="Офисы">
+                  <div class="screed--list__item-name d-flex ai-center justify-center"><span>Офисы</span></div>
+                </div>
+                <div class="screed--list__item d-flex"><img src="img/parking.png" alt="Парковки">
+                  <div class="screed--list__item-name d-flex ai-center justify-center"><span>Парковки</span></div>
+                </div>
+                <div class="screed--list__item d-flex"><img src="img/auto.png" alt="Автосалоны и автосервисы">
+                  <div class="screed--list__item-name d-flex ai-center justify-center"><span>Автосалоны и автосервисы</span></div>
+                </div>
+                <div class="screed--list__item d-flex"><img src="img/factories.png" alt="Производственные помещения">
+                  <div class="screed--list__item-name d-flex ai-center justify-center"><span>Производственные помещения</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section salary second-salary d-flex col"><img class="second-salary-bg2" src="img/salary-bg2.png" alt="Second salary bg">
+            <div class="second-salary-bg3"><img src="img/salary-bg3.png" alt="Second salary bg"></div>
+            <div class="box col">
+              <div class="secondSalary">
+                <h3 class="salary--title">
+                  <p class="orange-box"><span>Коттедж - 550 рублей за 1 м<sup>2</sup></span></p><br>все включено, вне зависимости <br>от толщины стяжки!
+                </h3>
+                <div class="salary--form">
+                  <form class="d-flex col-100" action="">
+                    <input class="input" id="salaryPhone" name="salaryPhone" type="text" placeholder="Введите Ваш телефон">
+                    <button class="btn" type="submit"><span>Получить скидку</span></button>
+                  </form>
+                  <div class="span salary--value">Скидка</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section materials d-flex col">
+            <div class="box col">
+              <h3 class="materials--title">Материалы которые мы используем</h3>
+              <div class="materials--list d-flex flex-wrap">
+                <div class="materials--list__elem d-flex col ai-center">
+                  <div class="materials--list__elem-image d-flex col ai-center"><img src="img/сement.png" alt="Цемент М500"></div><span class="materials--list__elem-name">Цемент М500</span><span class="materials--list__elem-descr">Цемент только проверенных производителей Eurocement, Holcim, Lafarge, HeidelbergCement</span>
+                </div>
+                <div class="materials--list__elem d-flex col ai-center">
+                  <div class="materials--list__elem-image d-flex col ai-center"><img src="img/sand.png" alt="Мытый крупный песок"></div><span class="materials--list__elem-name">Мытый крупный песок</span><span class="materials--list__elem-descr">1 класса крупный Мк 2,0-3,0 мм.</span>
+                </div>
+                <div class="materials--list__elem d-flex col ai-center">
+                  <div class="materials--list__elem-image d-flex col ai-center"><img src="img/plasticizer.png" alt="Пластификатор SIKA ®"></div><span class="materials--list__elem-name">Пластификатор SIKA ®</span><span class="materials--list__elem-descr">Увеличение прочности бетона, снижение усадочных деформаций и повышение трещиностойкости бетона (производство Германия)</span>
+                </div>
+                <div class="materials--list__elem d-flex col ai-center">
+                  <div class="materials--list__elem-image d-flex col ai-center"><img src="img/fiberglass.png" alt="Фиброволокно"></div><span class="materials--list__elem-name">Фиброволокно</span><span class="materials--list__elem-descr">Предотвращает образование трещин возникающих вследствие механического воздействия или усадки</span>
+                </div>
+                <div class="materials--list__elem d-flex col ai-center">
+                  <div class="materials--list__elem-image d-flex col ai-center"><img src="img/wrap.png" alt="Техническая пленка"></div><span class="materials--list__elem-name">Техническая пленка</span><span class="materials--list__elem-descr">Поддержание необходимой влажности для набора прочности после схватывания  (используем снизу и сверху стяжки)</span>
+                </div>
+                <div class="materials--list__elem d-flex col ai-center">
+                  <div class="materials--list__elem-image d-flex col ai-center"><img src="img/tape.png" alt="Демпферная лента"></div><span class="materials--list__elem-name">Демпферная лента</span><span class="materials--list__elem-descr">Разделительный слой между стеной и полом для компенсации температурного расширения стяжки</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section screedForm d-flex col"><img class="screedForm-bg" src="img/screedForm.png" alt="screedForm">
+            <div class="screedForm-cube-1"><img class="js-parallax" data-size="20" src="img/cube2.png" alt="Cube"></div>
+            <div class="screedForm-cube-2"><img class="js-parallax" data-size="10" src="img/cube3.png" alt="Cube"></div>
+            <div class="box col">
+              <div class="salary-man-img"><img class="js-parallax" data-size="15" src="img/man.png" alt="Man"></div>
+              <h3 class="screedForm--title">Хотите заказать стяжку, но сомневаетесь?<br>
+                <p class="orange-box"><span> Сначала стяжка - потом оплата!</span></p>
+              </h3><span class="screedForm--subtitle">Обратитесь к нам, мы уверены в качестве! Просто заполните форму обратной связи, наш менеджер перезвонит и подробно расскажет об условиях оплаты</span>
+              <div class="salary--form">
+                <form class="d-flex col-100" action="">
+                  <input class="input" id="salaryPhone" name="salaryPhone" type="text" placeholder="Введите Ваш телефон">
+                  <button class="btn" type="submit"><span>Заказать консультацию</span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="main-section reviews d-flex col">
+            <div class="box col">
+              <h3 class="reviews--title">Отзывы наших клиентов</h3>
+              <div class="reviews--container">
+                <iframe src="https://www.youtube.com/embed/mdprkGyhQh8" height="100%" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/mdprkGyhQh8" height="100%" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/mdprkGyhQh8" height="100%" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/mdprkGyhQh8" height="100%" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/mdprkGyhQh8" height="100%" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/mdprkGyhQh8" height="100%" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="reviews--slider__nav">
+                <button class="reviews--slider__prev" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px">
+                    <image x="0px" y="0px" width="40px" height="40px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAQAAAAm93DmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkARoQJTZ4qotxAAAEFUlEQVRIx42XP2gbZxjGf+81lXEsWxAwpotwMonYQ8B0uKMmIIMhq4eMCciE7HFd5JBOKVikTfYMNjijB68BgwXG9G4IAQ920dQGLcUECraVmKSkTwfd6b7TP+cVko77pN89z/u+uu+Vie4IMUAYmrYF5lRiinGDc07UsLfs+e8YGNYPCExYhfvcAuADTbUM8hQ1BoYObYtN/+wrgdGoVnlEwVrssKsDazqLReZZZIk8p7zQr8HFpcDoNpvc4C+e8YqPbevZV5/oKvf4iev8ScXfHwKMjCq/8ElP7Tmfk7PCYlQ7/PZnc6zoZxvhCTVffYHhN/aSZf1hdzlOFbXXzQH7qYAZtrnJBg/9L8k5z1H3UsuqW6DjRFkbZfGxxc80/GMC6izzMrQeIFWWrW53/FMcVZeFf6o71LVMtctydFt1aygITuO2cXCJ8cS23wWNCoSUVA72OwrDUTb5pLvBaYpSB5cci94Wi1Xe1Sc2w9EO0Fa5YU+DY6dWDtKcXFpfaHDMU7thq7HlaIIm/1Dy40aJwGmT7qYRQR9kmKNh1yj6Zx5QoaBnvtN3chS6tRWDShV85pkKVMAD3VfLXrl23SIozp3QCr8zMrDgr2hxH7xo2m7Zjv8xu5oUxuIHWNV+s3H9N4gXfLQdboXTHguCXXdJPVhBlXWOWLB/xcDYBVvwmAMd9FPnoKta54gy74e2+wEw51HiQ9DsXpODtSrrFuOGhd/kg0pXNGXN3sW0LFRZtyOV7f2wKscymkx5jKvVrc6xvsw6RyrzPinRsLAW41f6XinTeW29GvAr6f6exzn5brvO8Yat2Sx1m3R/gAMV5jn37ITi0MvWWNOs6kxyeRQ58dRgLMwg3YYRoBprNktdk8MzGBUZo+HZW8Pmu01bnLe4FDXWmKXO5LAsah5462kPWMzi5IBT4zbLHt8OIS4Ce17wTodaCq/2lsUyeNX4kTMb6Dq8aks69N95YFuWt3vZHNIxnDa5nvODPg8Cco+8bYGJcMIyN9jQ2Tyzt9c22O9Di3I0dI1icOZBcKYXus6Km0PL2E61DmpurXCdF8FZvOuFo3bEd3zvHycKU7OuymQU6dE3ozf2N7P+RbxJBRdUGNF2VHCt9d4Z++uLCmzbCBX/Ajobvb+vJ9xkJ8qls0K6m6hTqN4ihzl2uKknydCUTg4126Cs14lK9+vue1ZjVLDXlNmglpzpAAPpIRtWJmQmi0m20j6j6QwhZTb0MFAPEIIvesBjlfRGa8q52bQ+aqNcuGZvVOIxD4IvKaVn4Axvs2k9A2cCb/dhOnCqEgwbOONrj2rVHlFQix127YCmk9Gi5m1RS/b1IzFECJsgM7TTAvIq2pgwONQWm8HXDu1h2sjTtsAcJU3ZOOjcTmhwyd+K/wENTMlkTpbgTgAAAABJRU5ErkJggg=="></image>
+                  </svg>
+                </button>
+                <button class="reviews--slider__next" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px">
+                    <image x="0px" y="0px" width="40px" height="40px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAQAAAAm93DmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkARoQJyS5JZi7AAAEDElEQVRIx42XTUgbaRjHf//ZbsQaDRRE9hLanoJ6EGQPM6wUIgi9euixhUjpva6Llu7JBcXd9t6Dgj324LUgGCiyM4cieNAlp13JZRFhoTFW6tJ99pBJ8o4zUR9IJvP1e//Px/u+T2T0tvCuppm0EiMMCk45tpr22LEjAeBnvKNsYDikCk+YAOCMujUFeYo2AML2tckGjRsCo35b4DkFNdli23ZVd24WmWKGWfJ84rX9GpxfC4wesMF9/mKNt3wGQyS/gds85ifu8ScV/8MVwEgs8gtfbFmv/AuIIMZ0UN3zHPP2s/p4yapvmcDwG71hzv7QI/8wvoJo3VcCbPF1jfGOUdZ55n9tUzxH3Rubs6qCNi4eMUa0oO3fhhD+IQFV5ngTKgVkkTlV9dD/xDWmeBAA/5M9pGpzLF5yOXpgVdUsCBI4N4Yk0tK6FrSeKhBSsnLwoaMw7GeDL/YoyFBn8QcM61xrux+rfGRf2Aj7O0AtcF/LwSGZJieWwhJDtSw4ZFn3tRC7HA1R5x9K/sVlVJRZNMRgOVMvzFHTHYp+wwMqFGwtjevqkwOTA+9acMGaFaiAB/bEmnqbjTOsz363eTeCPewtTZ6AF93VhLb8z9k4of80qN9YbBVLt8x1aYDgs7aYCO96TBtsX5GOf23aDlhpVZqLSbm+DZr2mATb7eUwACeUk0hzismxXWDSo8RZUIfeSMGJynSQvRLj1zmzkmcj6olTpwbthDIHtmKLcaoyU2R1RjwGrck1ZgAnVtaBVphrz+a0SjUZvHUDVBw3XVc4GOIWp+R7P6LucZgq41pivf1qGq88p56OKV7vsg1TZZwlVtsDZKotcuxZjYGw2BsFBsOqMm5LWk0GImlRkQFqnvaEpq7CaVgdde3V2jJSYlPAnmc7wEyvCAq+ZaeFc+JJ5tyeAXa84Mj2bTa83TMtsgY/spp0M1004W3N2r5/5IE2ldfjnk5f6Ad71U6Du7xeQj4mr02QEQ6p5wKbjJdB4ry7wEY5anaHYtDwIGjYa7vHfHYUnVzHC5g6e4zjyTz3eB004l0v7NcB3/G9f2lX6SpMNyQG8a4H0Zh91N+M++fxJhWcU6HP3kWFdNm4StVx2k1LVOCd+qj459DZ6P0P9pJRtqJctsttJ5UaLMyxxai9bDdN3c5hVeuU7b2rUhlHtymBqKD3lFlvT0kHGJg9Y11lwmgsXTxKFHJH3RghZdbtWWApIARf7SkvrGQfw6Uw5xaKWyoddTlb0kcr8YKnwdcuJdVwhg/YUKrh7OoSOA2nVYKrGs44a/22oOcUrMkW29ql7iSkaFOasVndvCWOoUMkmnaaQN6KGjAE+7bJBo0g401dtay3/lZQshENgp3qmBp77HCULGzX/ge8bMpjrV0v4AAAAABJRU5ErkJggg=="></image>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="main-section process d-flex col"><img class="process-bg" src="img/process-bg.png" alt="Process bg">
+            <div class="box col">
+              <h3 class="process--title">Процесс полусухой стяжки пола</h3>
+              <div class="process--list d-flex">
+                <svg class="process--line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="939px" height="38px">
+                  <path fill-rule="evenodd" stroke="rgb(255, 255, 255)" stroke-width="2px" stroke-dasharray="4, 4" stroke-linecap="round" stroke-linejoin="miter" opacity="0.302" fill="none" d="M2.000,33.000 C2.000,33.000 462.937,-39.404 936.000,34.000"></path>
+                </svg>
+                <div class="process--list__elem d-flex col ai-center"><span class="process--list__elem-number d-flex ai-center justify-center">01</span><span class="process--list__elem-name">Подготовка основания</span><span class="process--list__elem-descr">Подсыпка грунта, укладка плёнки; шумоизоляция и гидроизоляция - по заказу</span></div>
+                <div class="process--list__elem d-flex col ai-center"><span class="process--list__elem-number d-flex ai-center justify-center">02</span><span class="process--list__elem-name">Приготовление раствора</span><span class="process--list__elem-descr">С последующей подачей его к месту укладки. Высота подачи по вертикали 90м, по горизонту - 180м</span></div>
+                <div class="process--list__elem d-flex col ai-center"><span class="process--list__elem-number d-flex ai-center justify-center">03</span><span class="process--list__elem-name">Выставление маяков</span><span class="process--list__elem-descr">Весь процесс выравнивания контролируется уровнем и лазерным невелиром</span></div>
+                <div class="process--list__elem d-flex col ai-center"><span class="process--list__elem-number d-flex ai-center justify-center">04</span><span class="process--list__elem-name">Выравнивание пола</span><span class="process--list__elem-descr">Раствор выравнивается по всему периметру помещения</span></div>
+                <div class="process--list__elem d-flex col ai-center"><span class="process--list__elem-number d-flex ai-center justify-center">05</span><span class="process--list__elem-name">Финишная затирка</span><span class="process--list__elem-descr">Позволяет уплотнить верхний слой и придать ему дополнительную прочность и износостойкость</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-section portfolio d-flex col">
+            <div class="box col">
+              <h3 class="portfolio--title">Портфолио наших работ</h3>
+              <div class="portfolio--slider">
+                <div class="portfolio--slider__item d-flex col ai-center">
+                  <div class="portfolio--slider__item-image d-flex ai-center justify-center"><img src="img/portfolio-img.png" alt="Название проекта"></div><span class="portfolio--slider__item-name">Название проекта</span><span class="portfolio--slider__item-descr">Краткое описание может быть в несколько строк</span>
+                  <button class="btn" type="button"><span>Хочу такой же пол!</span></button>
+                </div>
+                <div class="portfolio--slider__item d-flex col ai-center">
+                  <div class="portfolio--slider__item-image d-flex ai-center justify-center"><img src="img/portfolio-img.png" alt="Название проекта"></div><span class="portfolio--slider__item-name">Название проекта</span><span class="portfolio--slider__item-descr">Краткое описание может быть в несколько строк</span>
+                  <button class="btn" type="button"><span>Хочу такой же пол!</span></button>
+                </div>
+                <div class="portfolio--slider__item d-flex col ai-center">
+                  <div class="portfolio--slider__item-image d-flex ai-center justify-center"><img src="img/portfolio-img.png" alt="Название проекта"></div><span class="portfolio--slider__item-name">Название проекта</span><span class="portfolio--slider__item-descr">Краткое описание может быть в несколько строк</span>
+                  <button class="btn" type="button"><span>Хочу такой же пол!</span></button>
+                </div>
+                <div class="portfolio--slider__item d-flex col ai-center">
+                  <div class="portfolio--slider__item-image d-flex ai-center justify-center"><img src="img/portfolio-img.png" alt="Название проекта"></div><span class="portfolio--slider__item-name">Название проекта</span><span class="portfolio--slider__item-descr">Краткое описание может быть в несколько строк</span>
+                  <button class="btn" type="button"><span>Хочу такой же пол!</span></button>
+                </div>
+                <div class="portfolio--slider__item d-flex col ai-center">
+                  <div class="portfolio--slider__item-image d-flex ai-center justify-center"><img src="img/portfolio-img.png" alt="Название проекта"></div><span class="portfolio--slider__item-name">Название проекта</span><span class="portfolio--slider__item-descr">Краткое описание может быть в несколько строк</span>
+                  <button class="btn" type="button"><span>Хочу такой же пол!</span></button>
+                </div>
+              </div>
+              <div class="portfolio--slider__nav">
+                <button class="portfolio--slider__prev" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px">
+                    <image x="0px" y="0px" width="40px" height="40px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAQAAAAm93DmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkARoQJTZ4qotxAAAEFUlEQVRIx42XP2gbZxjGf+81lXEsWxAwpotwMonYQ8B0uKMmIIMhq4eMCciE7HFd5JBOKVikTfYMNjijB68BgwXG9G4IAQ920dQGLcUECraVmKSkTwfd6b7TP+cVko77pN89z/u+uu+Vie4IMUAYmrYF5lRiinGDc07UsLfs+e8YGNYPCExYhfvcAuADTbUM8hQ1BoYObYtN/+wrgdGoVnlEwVrssKsDazqLReZZZIk8p7zQr8HFpcDoNpvc4C+e8YqPbevZV5/oKvf4iev8ScXfHwKMjCq/8ElP7Tmfk7PCYlQ7/PZnc6zoZxvhCTVffYHhN/aSZf1hdzlOFbXXzQH7qYAZtrnJBg/9L8k5z1H3UsuqW6DjRFkbZfGxxc80/GMC6izzMrQeIFWWrW53/FMcVZeFf6o71LVMtctydFt1aygITuO2cXCJ8cS23wWNCoSUVA72OwrDUTb5pLvBaYpSB5cci94Wi1Xe1Sc2w9EO0Fa5YU+DY6dWDtKcXFpfaHDMU7thq7HlaIIm/1Dy40aJwGmT7qYRQR9kmKNh1yj6Zx5QoaBnvtN3chS6tRWDShV85pkKVMAD3VfLXrl23SIozp3QCr8zMrDgr2hxH7xo2m7Zjv8xu5oUxuIHWNV+s3H9N4gXfLQdboXTHguCXXdJPVhBlXWOWLB/xcDYBVvwmAMd9FPnoKta54gy74e2+wEw51HiQ9DsXpODtSrrFuOGhd/kg0pXNGXN3sW0LFRZtyOV7f2wKscymkx5jKvVrc6xvsw6RyrzPinRsLAW41f6XinTeW29GvAr6f6exzn5brvO8Yat2Sx1m3R/gAMV5jn37ITi0MvWWNOs6kxyeRQ58dRgLMwg3YYRoBprNktdk8MzGBUZo+HZW8Pmu01bnLe4FDXWmKXO5LAsah5462kPWMzi5IBT4zbLHt8OIS4Ce17wTodaCq/2lsUyeNX4kTMb6Dq8aks69N95YFuWt3vZHNIxnDa5nvODPg8Cco+8bYGJcMIyN9jQ2Tyzt9c22O9Di3I0dI1icOZBcKYXus6Km0PL2E61DmpurXCdF8FZvOuFo3bEd3zvHycKU7OuymQU6dE3ozf2N7P+RbxJBRdUGNF2VHCt9d4Z++uLCmzbCBX/Ajobvb+vJ9xkJ8qls0K6m6hTqN4ihzl2uKknydCUTg4126Cs14lK9+vue1ZjVLDXlNmglpzpAAPpIRtWJmQmi0m20j6j6QwhZTb0MFAPEIIvesBjlfRGa8q52bQ+aqNcuGZvVOIxD4IvKaVn4Axvs2k9A2cCb/dhOnCqEgwbOONrj2rVHlFQix127YCmk9Gi5m1RS/b1IzFECJsgM7TTAvIq2pgwONQWm8HXDu1h2sjTtsAcJU3ZOOjcTmhwyd+K/wENTMlkTpbgTgAAAABJRU5ErkJggg=="></image>
+                  </svg>
+                </button>
+                <button class="portfolio--slider__next" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px">
+                    <image x="0px" y="0px" width="40px" height="40px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAQAAAAm93DmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkARoQJyS5JZi7AAAEDElEQVRIx42XTUgbaRjHf//ZbsQaDRRE9hLanoJ6EGQPM6wUIgi9euixhUjpva6Llu7JBcXd9t6Dgj324LUgGCiyM4cieNAlp13JZRFhoTFW6tJ99pBJ8o4zUR9IJvP1e//Px/u+T2T0tvCuppm0EiMMCk45tpr22LEjAeBnvKNsYDikCk+YAOCMujUFeYo2AML2tckGjRsCo35b4DkFNdli23ZVd24WmWKGWfJ84rX9GpxfC4wesMF9/mKNt3wGQyS/gds85ifu8ScV/8MVwEgs8gtfbFmv/AuIIMZ0UN3zHPP2s/p4yapvmcDwG71hzv7QI/8wvoJo3VcCbPF1jfGOUdZ55n9tUzxH3Rubs6qCNi4eMUa0oO3fhhD+IQFV5ngTKgVkkTlV9dD/xDWmeBAA/5M9pGpzLF5yOXpgVdUsCBI4N4Yk0tK6FrSeKhBSsnLwoaMw7GeDL/YoyFBn8QcM61xrux+rfGRf2Aj7O0AtcF/LwSGZJieWwhJDtSw4ZFn3tRC7HA1R5x9K/sVlVJRZNMRgOVMvzFHTHYp+wwMqFGwtjevqkwOTA+9acMGaFaiAB/bEmnqbjTOsz363eTeCPewtTZ6AF93VhLb8z9k4of80qN9YbBVLt8x1aYDgs7aYCO96TBtsX5GOf23aDlhpVZqLSbm+DZr2mATb7eUwACeUk0hzismxXWDSo8RZUIfeSMGJynSQvRLj1zmzkmcj6olTpwbthDIHtmKLcaoyU2R1RjwGrck1ZgAnVtaBVphrz+a0SjUZvHUDVBw3XVc4GOIWp+R7P6LucZgq41pivf1qGq88p56OKV7vsg1TZZwlVtsDZKotcuxZjYGw2BsFBsOqMm5LWk0GImlRkQFqnvaEpq7CaVgdde3V2jJSYlPAnmc7wEyvCAq+ZaeFc+JJ5tyeAXa84Mj2bTa83TMtsgY/spp0M1004W3N2r5/5IE2ldfjnk5f6Ad71U6Du7xeQj4mr02QEQ6p5wKbjJdB4ry7wEY5anaHYtDwIGjYa7vHfHYUnVzHC5g6e4zjyTz3eB004l0v7NcB3/G9f2lX6SpMNyQG8a4H0Zh91N+M++fxJhWcU6HP3kWFdNm4StVx2k1LVOCd+qj459DZ6P0P9pJRtqJctsttJ5UaLMyxxai9bDdN3c5hVeuU7b2rUhlHtymBqKD3lFlvT0kHGJg9Y11lwmgsXTxKFHJH3RghZdbtWWApIARf7SkvrGQfw6Uw5xaKWyoddTlb0kcr8YKnwdcuJdVwhg/YUKrh7OoSOA2nVYKrGs44a/22oOcUrMkW29ql7iSkaFOasVndvCWOoUMkmnaaQN6KGjAE+7bJBo0g401dtay3/lZQshENgp3qmBp77HCULGzX/ge8bMpjrV0v4AAAAABJRU5ErkJggg=="></image>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="main-section lastSection d-flex col"><img class="lastSection-bg" src="img/lastSection-bg.png" alt="Last section">
+            <div class="box col">
+              <h3 class="lastSection--title">Сухая стяжка пола</h3>
+              <div class="lastSection--text">
+                <p>Технология изготовления полусухой стяжки предполагает создание поверхности пола на основе цементно-песчаной смеси. В отдельных случаях для придания стяжке прочности применяется армирование металлом или полипропиленовым фиброволокном. Как уже говорилось выше, полусухая стяжка пола является технологией выравнивания и создания черновой основы конструкции будущего пола. Использование данного метода организации стяжки позволяет существенно ускорить формирование основы для напольного покрытия во время капитального строительства или ремонта.</p>
+                <p>Преимущества полусухой стяжки проявляются в случаях, когда требуется сформировать стяжку значительной высоты, и предусмотренные технологией мокрой стяжки максимальные 50 мм, не обеспечат необходимый уровень пола.</p>
+                <p>Полусухая технология выигрышна и при необходимости усиления ослабленных перекрытий. Такой способ организации стяжки также устраняет риск проникновения воды в межэтажные перекрытия при ремонтных работах на объекте, введённом в эксплуатацию. Проще, это не позволит залить квартиры соседей.</p>
+                <p>Полусухим метод стяжки назван по причине использования меньшего объёма воды при приготовлении рабочей смеси. Для активации процесса гидратации цементных частиц в первичную песчано-цементную смесь вводится минимально необходимое количество жидкости, обеспечивающей эффективное образование кристаллических связей цементного камня. Консистенция смеси не позволяет ей течь, а потому правильнее будет сказать, что она не заливается, а насыпается на основание.</p>
+                <p>Услуги нашей компании по механизированной полусухой стяжке пола предполагают использование специализированных пневмонагнетателей, позволяющих подавать большие объёмы рабочей смеси на расстояние до 150 метров. В случае высотного строительства это соответствует уровню примерно 30 этажа.</p>
+              </div>
             </div>
           </div>
         </main>
@@ -43,12 +369,11 @@
       <div class="footer-wrapper" id="footerWrapper">
         <footer class="footer">
           <div class="box">
-            <div class="footer__body">
-              <div class="footer-elem"><a href="privacy-policy.html">Политика конфиденциальности</a></div>
-              <div class="footer-elem"><a href="rules.html">Положения и условия</a></div>
-              <div class="footer-elem"><a href="tel:78915454545">+7 (891) 545 45 45</a></div>
-              <div class="footer-elem">
-                <p>©<span>2019</span></p>
+            <div class="contacts__body">
+              <div class="contacts__body--logo"><a href="/"><img src="img/logo.png" alt="Logo"></a></div>
+              <div class="contacts__body--contacts">
+                <div class="contacts--contact-section"><a class="contacts--contact-phone" href="tel:74997777777">+7 (499) 777-77-77</a><a class="contacts--contact-phone" href="tel:79636939393">+7 (963) 693 93 93</a><span class="contacts--contact-time">ежедневно с 08:00 до 21:00</span></div>
+                <button class="btn" type="button"><span>Вызов замерщика</span></button>
               </div>
             </div>
           </div>
@@ -58,15 +383,8 @@
     <script src="js/libs.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/moment.min.js"></script>
-    <script src="js/daterangepicker.js"></script>
-    <script src="js/intlTelInput.min.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/jquery.inputmask.bundle.min.js"></script>
-    <script src="js/formValid.js"></script>
-    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/paralax.js"></script>
+    <script src="js/hamburger.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

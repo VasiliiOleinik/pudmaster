@@ -7,7 +7,15 @@
         'Оборудование',
         'Контакты',
     ];
+.mobile-menu
+    ul(class="mobile-menu--list")
+        each items in links
+            li(class="mobile-menu--list__elem")
+                a(href="/" class="mobile-menu__elem-link")=items
 header.header
+    button(class="hamburger hamburger--collapse" type="button")
+        span(class="hamburger-box")
+            span(class="hamburger-inner")
     .header__body
         nav(class="header__body-navigation")
             ul(class="navigation--list")

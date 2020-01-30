@@ -46,6 +46,27 @@ $(function() {
           slidesToScroll: 1,
         }
       },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          nav: false,
+          variableWidth: false,
+        }
+      },
     ]
   });
+  $('.hamburger').on('click', function() {
+		$('.mobile-menu').toggleClass('visible');
+		if($('.mobile-menu').hasClass('visible')) {
+			$('.mobile-menu').css({'right':'0', 'transition':'all .2s linear'});
+		} else {
+			$('.mobile-menu').css({'right':'-200px', 'transition':'all .2s linear'});
+		}
+  });
+  
+  if(screen.width < 768) {
+    $('.contacts__body--logo.main').appendTo( ".header__body" );
+  }
 });
